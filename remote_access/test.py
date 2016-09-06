@@ -12,9 +12,6 @@ class Access():
     #url = 'https://odoo.fablab-karlsruhe.de'
     url = 'http://127.0.0.1:8069'
     db = 'FabLabKA'
-    #db = 'testDB'
-    #username = 'LaserSaur'
-    #password = 'm9iBLH9p7xsIRyAViwJy'
     #username = 'admin'
     #password = 'admin'
     username = secret_password.username
