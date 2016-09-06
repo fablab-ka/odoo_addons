@@ -28,6 +28,7 @@ TODO: Write more stuff
     'data': [
         'lab_machine.xml',
         'lab_id_cards.xml',
+        'res_user_mod.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode

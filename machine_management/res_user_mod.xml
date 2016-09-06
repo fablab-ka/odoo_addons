@@ -1,0 +1,22 @@
+<openerp>
+    <data>
+
+        <record id="base.view_partner_form_inherited_idcards" model="ir.ui.view">
+            <field name="name">res.partner.form.inherited.idcards</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Machine Stuff">
+                        <group>
+                            <field name="id_cards"/>
+                        </group>
+                    </page>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="lab_membership"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>
