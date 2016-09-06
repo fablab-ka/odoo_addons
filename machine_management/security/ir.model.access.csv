@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+lab_machine_access,lab_machine_rule,model_lab_machine,machine_user_group,1,0,0,0
+lab_id_cards_access,id_cards_rule,model_lab_id_cards,machine_user_group,1,0,0,0

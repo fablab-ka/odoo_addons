@@ -1,0 +1,61 @@
+<openerp>
+    <data>
+
+        <record id="id_card_form_view" model="ir.ui.view">
+            <field name="name">ID Card Form View</field>
+            <field name="model">lab.id_cards</field>
+            <field name="arch" type="xml">
+                <form string="ID Cards">
+                    <sheet>
+                        <group>
+                            <field name="card_id"/>
+                            <field name="assigned_client"/>
+                            <field name="status"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="id_card_tree_view" model="ir.ui.view">
+            <field name="name">ID Card Tree View</field>
+            <field name="model">lab.id_cards</field>
+            <field name="arch" type="xml">
+                <tree string="ID Cards">
+                    <field name="card_id"/>
+                    <field name="assigned_client"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="id_cards_action" model="ir.actions.act_window">
+            <field name="name">ID Cards</field>
+            <field name="res_model">lab.id_cards</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a new ID Card here.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="ID Cards" id="id_cards_man_menu" sequence="10" parent="lab_menu"/>
+        <menuitem name="ID Cards" parent="id_cards_man_menu" id="id_cards_menu" action="id_cards_action"/>
+
+        <record id="base.view_partner_form_inherited_idcards" model="ir.ui.view">
+            <field name="name">res.partner.form.inherited.idcards</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Machine Stuff">
+                        <group>
+                            <field name="id_cards"/>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</openerp>

@@ -1,0 +1,62 @@
+<openerp>
+    <data>
+        <record id="machine_form_view" model="ir.ui.view">
+            <field name="name">Machine Form View</field>
+            <field name="model">lab.machine</field>
+            <field name="arch" type="xml">
+                <form string="Machines">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="status"/>
+                            <field name="rules"/>
+                            <field name="user_ids"/>
+                            <field name="owner_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="machine_tree_view" model="ir.ui.view">
+            <field name="name">Machine Tree View</field>
+            <field name="model">lab.machine</field>
+            <field name="arch" type="xml">
+                <tree string="ID Cards">
+                    <field name="name"/>
+                    <field name="status"/>
+                    <field name="rules"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="machines_action" model="ir.actions.act_window">
+            <field name="name">Machines</field>
+            <field name="res_model">lab.machine</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a new Machine here.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Lab" id="lab_menu" sequence="85"/>
+        <menuitem name="Machine Management" id="machine_man_menu" sequence="10" parent="lab_menu"/>
+        <menuitem name="Machines" id="machines_menu" parent="machine_man_menu" action="machines_action"/>
+    </data>
+
+    <data noupdate="0">
+        <record model="ir.module.category" id="module_category_lab_management">
+            <field name="name">Lab Management</field>
+            <field name="description">Lab Management Applications</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="machine_user_group" model="res.groups">
+            <field name="name">Machine User</field>
+            <field name="comment">Machine User Permission Group.</field>
+            <field name="category_id" ref="machine_management.module_category_lab_management"/>
+        </record>
+    </data>
+</openerp>
