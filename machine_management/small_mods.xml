@@ -1,6 +1,5 @@
 <openerp>
     <data>
-
         <record id="base.view_partner_form_inherited_idcards" model="ir.ui.view">
             <field name="name">res.partner.form.inherited.idcards</field>
             <field name="model">res.partner</field>
@@ -15,6 +14,19 @@
                 </xpath>
                 <xpath expr="//field[@name='name']" position="after">
                     <field name="lab_membership"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="product_template_form_inherited" model="ir.ui.view">
+            <field name="name">product.template.form.inherited.lab</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Machine Stuff">
+                        <field name="tag_ids" widget="many2many_tags"/>
+                    </page>
                 </xpath>
             </field>
         </record>

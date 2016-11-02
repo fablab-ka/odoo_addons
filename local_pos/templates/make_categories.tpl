@@ -1,6 +1,6 @@
 %#Test  only
-%for entry in data
+%for i in range(0,len(data) - 1):
 <div>
-    {{entry['name']}}
+    %{{frozenset(data[i]['name'])}}
 </div>
 %end
