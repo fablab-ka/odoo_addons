@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+ <data noupdate="1">
+<!-- Chart Template -->
+
+        <record id="l10n_chart_de_skr49" model="account.chart.template">
+            <field name="name">Deutscher Kontenplan SKR49</field>
+            <field name="account_root_id" ref="chart_skr49"/>
+            <field name="tax_code_root_id" ref="tax_code_USTVA_skr49"/>
+            <field name="bank_account_view_id" ref="chart_skr49_1800"/>
+            <field name="property_account_receivable" ref="chart_skr49_1206"/>
+            <field name="property_account_payable" ref="chart_skr49_3301"/>
+            <field name="property_account_expense_categ" ref="chart_skr49_5400"/>
+            <field name="property_account_income_categ" ref="chart_skr49_4400"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="code_digits" eval="4"/>
+        </record>
+   </data>
+</openerp>

@@ -32,7 +32,5 @@
         'templates.xml',
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'demo.xml',
-    ],
+    'demo': [ ],
 }
