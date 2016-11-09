@@ -22,7 +22,7 @@
             <field name="name">Machine Tree View</field>
             <field name="model">lab.machine</field>
             <field name="arch" type="xml">
-                <tree string="ID Cards">
+                <tree>
                     <field name="name"/>
                     <field name="status"/>
                     <field name="rules"/>
@@ -56,6 +56,12 @@
         <record id="machine_user_group" model="res.groups">
             <field name="name">Machine User</field>
             <field name="comment">Machine User Permission Group.</field>
+            <field name="category_id" ref="machine_management.module_category_lab_management"/>
+        </record>
+
+        <record id="lab_manager_group" model="res.groups">
+            <field name="name">Lab Manager</field>
+            <field name="comment">Lab Manager Permission Group.</field>
             <field name="category_id" ref="machine_management.module_category_lab_management"/>
         </record>
     </data>

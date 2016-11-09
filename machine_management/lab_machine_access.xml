@@ -1,0 +1,47 @@
+<openerp>
+    <data>
+        <record id="machine_access_form_view" model="ir.ui.view">
+            <field name="name">Machine Access Form View</field>
+            <field name="model">lab.access</field>
+            <field name="arch" type="xml">
+                <form string="Accesses">
+                    <sheet>
+                        <group>
+                            <field name="machine"/>
+                            <field name="user"/>
+                            <field name="start_time"/>
+                            <field name="end_time"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="machine_access_tree_view" model="ir.ui.view">
+            <field name="name">Machine Access Tree View</field>
+            <field name="model">lab.access</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="user"/>
+                    <field name="machine"/>
+                    <field name="start_time"/>
+                    <field name="end_time"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="machine_access_action" model="ir.actions.act_window">
+            <field name="name">Machine Access</field>
+            <field name="res_model">lab.access</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Create a new Machine Access here.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="Access" id="machine_access_menu" parent="machine_man_menu" action="machine_access_action"/>
+
+    </data>
+</openerp>

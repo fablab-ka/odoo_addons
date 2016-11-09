@@ -10,6 +10,7 @@ class machine_management2(models.Model):
     assigned_client = fields.Many2one(comodel_name="res.partner", string="Assigned client")
     status = fields.Selection([('unassigned', 'unassigned'), ('active', 'active'), ('inactive', 'inactive')],
                               string='Status', default='unassigned', required=True)
+    card_type = fields.Selection([('1', 'Type 1'), ('2', 'Type 2'), ('3', 'Type 3')], default='1', string="Card Type")
 
     @api.one
     @api.constrains('assigned_client', 'status')

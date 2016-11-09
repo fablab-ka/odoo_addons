@@ -29,6 +29,7 @@ TODO: Write more stuff
         'lab_machine.xml',
         'lab_id_cards.xml',
         'small_mods.xml',
+        'lab_machine_access.xml',
         'security/ir.model.access.csv',
     ],
     # only loaded in demonstration mode
