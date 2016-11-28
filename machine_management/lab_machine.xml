@@ -6,13 +6,23 @@
             <field name="arch" type="xml">
                 <form string="Machines">
                     <sheet>
-                        <group>
-                            <field name="name"/>
-                            <field name="status"/>
-                            <field name="rules"/>
-                            <field name="user_ids"/>
-                            <field name="owner_ids"/>
-                        </group>
+                        <notebook>
+                            <page string="Access">
+                                <group>
+                                    <field name="name"/>
+                                    <field name="status"/>
+                                    <field name="rules"/>
+                                    <field name="user_ids"/>
+                                    <field name="owner_ids"/>
+                                </group>
+                            </page>
+                            <page string="Settings">
+                                <group>
+                                    <field name="machine_tag_1"/>
+                                    <field name="machine_tag_2"/>
+                                </group>
+                            </page>
+                        </notebook>
                     </sheet>
                 </form>
             </field>

@@ -25,7 +25,11 @@
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside">
                     <page string="Machine Stuff">
-                        <field name="tag_ids" widget="many2many_tags"/>
+                        <field name="tag_ids"/>
+                        <field name="machine_parameter_1"/>
+                        <field name="machine_parameter_2"/>
+                        <field name="machine_parameter_3"/>
+                        <field name="machine_parameter_4"/>
                     </page>
                 </xpath>
             </field>
