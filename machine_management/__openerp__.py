@@ -7,7 +7,7 @@
 
     'description': """
 Machine Management
-==============
+========================================
 Allows Machine Management
 TODO: Write more stuff
     """,
@@ -26,6 +26,7 @@ TODO: Write more stuff
 
     # always loaded
     'data': [
+        'security/security.xml',
         'lab_machine.xml',
         'lab_id_cards.xml',
         'small_mods.xml',
