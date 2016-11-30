@@ -12,9 +12,10 @@ class machine_management2(models.Model):
                               string='Status', default='a', required=True)
     card_type = fields.Selection([('1', 'Serial Number'), ('2', 'Type 2'), ('3', 'Type 3')], default='1', string="Card Type", required=True)
 
-    @api.onchange('card_id', 'card_type')
+    @api.onchange('card_id')
+    @api.depends('card_id')
     def _check_change(self):
-        self.name = self.name.translate(None, ' ').upper()
+        self.card_id = self.card_id.replace(' ', '').upper()
 
     @api.one
     @api.constrains('assigned_client', 'status')
