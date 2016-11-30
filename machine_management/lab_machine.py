@@ -15,12 +15,3 @@ class lab_machine(models.Model):
                                     help="used for assigning products to the machine (eg for selling)")
     machine_tag_2 = fields.Many2one(comodel_name='product.tag', string="Product Tag 1",
                                     help="used for assigning products to the machine (eg for selling)")
-
-
-class machine_usage(models.Model):
-    _name = 'lab.machine_usage'
-
-    machine = fields.Many2one(comodel_name="lab.machine", string="Used Machine", required=True)
-    date_start = fields.Datetime(string="Start Time", required=True)
-    date_end = fields.Datetime(string="End Time", required=False)
-    time_run = fields.Integer(string="Run Time", )

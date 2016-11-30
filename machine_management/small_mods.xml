@@ -34,5 +34,39 @@
                 </xpath>
             </field>
         </record>
+
+
+        <record id="product_tag_form_view" model="ir.ui.view">
+            <field name="name">Product Tag Form View</field>
+            <field name="model">product.tag</field>
+            <field name="arch" type="xml">
+                <form string="Product Tags">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="products"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="product_tag_tree_view" model="ir.ui.view">
+            <field name="name">Product Tag Tree View</field>
+            <field name="model">product.tag</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product_tag_action" model="ir.actions.act_window">
+            <field name="name">Product Tag</field>
+            <field name="res_model">product.tag</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Product Tags" id="product_tag_menu" parent="machine_man_menu" action="product_tag_action"/>
     </data>
 </openerp>

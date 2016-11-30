@@ -11,6 +11,7 @@
                             <field name="card_id"/>
                             <field name="assigned_client"/>
                             <field name="status"/>
+                            <field name="card_type"/>
                         </group>
                     </sheet>
                 </form>

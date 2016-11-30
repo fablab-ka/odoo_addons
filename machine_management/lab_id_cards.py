@@ -8,12 +8,20 @@ class machine_management2(models.Model):
 
     card_id = fields.Char(string="Card Number", required=True)
     assigned_client = fields.Many2one(comodel_name="res.partner", string="Assigned client")
-    status = fields.Selection([('unassigned', 'unassigned'), ('active', 'active'), ('inactive', 'inactive')],
-                              string='Status', default='unassigned', required=True)
-    card_type = fields.Selection([('1', 'Type 1'), ('2', 'Type 2'), ('3', 'Type 3')], default='1', string="Card Type")
+    status = fields.Selection([('u', 'unassigned'), ('a', 'active'), ('i', 'inactive')],
+                              string='Status', default='a', required=True)
+    card_type = fields.Selection([('1', 'Serial Number'), ('2', 'Type 2'), ('3', 'Type 3')], default='1', string="Card Type", required=True)
+
+    @api.onchange('card_id', 'card_type')
+    def _check_change(self):
+        self.name = self.name.translate(None, ' ').upper()
 
     @api.one
     @api.constrains('assigned_client', 'status')
     def _check_can_be_active(self):
         if (self.assigned_client == False) and (self.status == 'active'):  # TODO: Doesn't work :(
             raise Warning('Cannot have active card without assigned user!')
+
+    _sql_constraints = [
+        ('card_id_unique', 'unique(card_id)', 'There already exists a Card with that ID!')
+    ]
