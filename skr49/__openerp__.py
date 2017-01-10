@@ -83,7 +83,7 @@ Dieses  Modul beinhaltet einen deutschen Kontenrahmen basierend auf dem SKR49.
 Der Kontorahmen ist noch nicht betriebsbereit!
 
     """,
-    'depends': ['l10n_de'],
+    'depends': ['base', 'account', 'base_iban', 'base_vat', 'account_chart',],
     'demo': [ ],
     'data': [
         'account_tax_skr49.xml',
