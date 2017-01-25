@@ -86,12 +86,12 @@ Der Kontorahmen ist noch nicht betriebsbereit!
     'depends': ['base', 'account', 'base_iban', 'base_vat', 'account_chart',],
     'demo': [ ],
     'data': [
-        'account_tax_skr49.xml',
         'account_types_skr49.xml',
         'account_chart_skr49.xml',
+        'account_tax_skr49.xml',
         'account_chart_template_skr49.xml',
         'account_tax_fiscal_position_skr49.xml',
-        'l10n_de_wizard.xml',
+        'l10n_de_skr49_wizard.xml',
     ],
     'installable': True,
 }

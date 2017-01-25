@@ -4,7 +4,7 @@ from xml.etree import ElementTree as ET
 
 
 
-int = open('Kontenplan_V3.csv', 'r')
+int = open('Kontenplan_V5.csv', 'r')
 out = open('account_chart_skr49.xml', 'w+')
 
 
