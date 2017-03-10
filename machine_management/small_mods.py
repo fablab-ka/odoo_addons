@@ -18,11 +18,11 @@ class product_template(models.Model):
     #_inherit = "product.product"
     #tag_ids = fields.Many2one(comodel_name='product.tag', string="Tag", delegate=True)
     #tag_ids = fields.Many2many(comodel_name='product.tag', string="Tags", relation='tag_product_rel', column1='id1', column2='id2')
-    tag_ids = fields.Many2many(string="Tags", comodel_name="product.tag", delegate=True)
+    tag_ids = fields.Many2many(string="Tags", comodel_name="product.tag", delegate=True, help="Tag for assigning this Product to a machine.")
     machine_parameter_1 = fields.Char(string="Parameter 1", help="General purpose Parameter")
-    machine_parameter_2 = fields.Char(string="Parameter 1", help="General purpose Parameter")
-    machine_parameter_3 = fields.Char(string="Parameter 1", help="General purpose Parameter")
-    machine_parameter_4 = fields.Char(string="Parameter 1", help="General purpose Parameter")
+    machine_parameter_2 = fields.Char(string="Parameter 2", help="General purpose Parameter")
+    machine_parameter_3 = fields.Char(string="Parameter 3", help="General purpose Parameter")
+    machine_parameter_4 = fields.Char(string="Parameter 4", help="General purpose Parameter")
 
 class product_tag(models.Model):
     _name = "product.tag"

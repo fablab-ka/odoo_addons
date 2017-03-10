@@ -4,9 +4,11 @@ import json
 
 class RalfPlugin(http.Controller):
 
-    @http.route('machine_management/geld_einzahlen/<int:amount>/<int:user>', auth='public', type='http')
+    @http.route('/ralfsys/geld_einzahlen/<int:amount>/<int:user>', auth='public', type='http')
     def geld_einzahlen(self, amount, user, **kw):
-        print('Geld Einzahlen: ' + amount + '€ von ' + user)
+        
+        print('Geld Einzahlen: ' + str(amount) + '€ von ' + str(user))
+
 #class MachineManagement(http.Controller):
 
     # @http.route('/machine_management/machine_management/test/', auth='public', type='http')

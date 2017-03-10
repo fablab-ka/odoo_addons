@@ -21,7 +21,7 @@ Ralf: Ich mach alles selber
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['machine_amanagement'],
+    'depends': [],
 
     # always loaded
     'data': [
