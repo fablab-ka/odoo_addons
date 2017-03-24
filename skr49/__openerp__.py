@@ -73,25 +73,22 @@
 
 {
     'name': 'Deutschland - Accounting - SKR49',
-    'version': '0.1',
+    'version': '0.2',
     'author': 'Philip Caroli',
     'website': 'https://fablab-karlsruhe.de/',
-    'category': 'Localization/Account Charts',
+    'category': 'Localization',
     'description': """
 Dieses  Modul beinhaltet einen deutschen Kontenrahmen basierend auf dem SKR49.
 ==============================================================================
 Der Kontorahmen ist noch nicht betriebsbereit!
 
     """,
-    'depends': ['base', 'account', 'base_iban', 'base_vat', 'account_chart',],
+    'depends': ['l10n_de'],
     'demo': [ ],
     'data': [
-        'account_types_skr49.xml',
-        'account_chart_skr49.xml',
-        'account_tax_skr49.xml',
-        'account_chart_template_skr49.xml',
-        'account_tax_fiscal_position_skr49.xml',
-        'l10n_de_skr49_wizard.xml',
+        'l10n_de_skr49_chart_data.xml',
+        'account_tax_fiscal_position_data.xml',
+        'account_chart_template_data.yml',
     ],
     'installable': True,
 }

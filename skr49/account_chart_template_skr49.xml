@@ -3,7 +3,7 @@
  <data noupdate="1">
 <!-- Chart Template -->
 
-        <record id="l10n_chart_skr49" model="account.chart.template">
+        <record id="l10n_chart_de_skr49" model="account.chart.template">
             <field name="name">Deutscher Kontenplan SKR49</field>
             <field name="account_root_id" ref="chart_skr49_skr49"/>
             <field name="tax_code_root_id" ref="tax_code_USTVA_skr49"/>
