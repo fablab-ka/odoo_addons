@@ -1,0 +1,927 @@
+Kategorie;Code;Name;Typ2
+skr49;skr49;Deutscher Kontenplan SKR49;view
+skr49;K0;Aktiva;view
+skr49;K1;Passiva;view
+skr49;K2;ideeller Bereich;view
+skr49;K3;ertragsneutrale Posten;view
+skr49;K4;Vermögensverwaltung;view
+skr49;K6;Ertragssteuerfreier Zweckbetrieb;view
+skr49;K8;Ertragssteuerpflichtiger Zweckbetrieb;view
+skr49;K9;Statistikkonten;view
+K0;K0G0;Ingangsetzungsaufwand;view
+K0G0;0002;Ingangsetzungsaufwand und Erweiterungsaufwand;asset
+K0;K0G1;Anlagevermögen;view
+K0G1;0010;Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten;asset
+K0G1;0015;Konzessionen;asset
+K0G1;0020;Gewerbliche Schutzrechte;asset
+K0G1;0025;Ähnliche Rechte und Werte;asset
+K0G1;0027;EDV-Software;asset
+K0G1;0030;Lizenzen an gewerblichen Schutzrechten;asset
+K0G1;0035;Geschäfts- oder Firmenwert;asset
+K0G1;0038;Anzahlungen auf Geschäftsoder Firmenwert;asset
+K0G1;0039;Anzahlungen auf immaterielle Vermögensgegenstände;asset
+K0G1;0040;Verschmelzungsmehrwert;asset
+K0G1;0050;Grundstücke unbebaut;asset
+K0G1;0055;Grundstücke mit Gebäuden bebaut;asset
+K0G1;0060;Grundstücke mit Anlagen bebaut;asset
+K0G1;0065;Grundstücke mit Substanzverkehr;asset
+K0G1;0070;Grundstücksgleiche Rechte;asset
+K0G1;0100;Gebäude;asset
+K0G1;0110;Vereinsheim;asset
+K0G1;0111;Sporthallen;asset
+K0G1;0112;Sportanlagen;asset
+K0G1;0120;Vereinsgaststätte;asset
+K0G1;0125;Sonstige Vereinsgebäude;asset
+K0G1;0130;Geschäftsbauten;asset
+K0G1;0135;Fabrikbauten;asset
+K0G1;0150;Garagen;asset
+K0G1;0155;Außenanlagen;asset
+K0G1;0160;Hof- und Wegebefestigungen;asset
+K0G1;0165;Wohnbauten;asset
+K0G1;0170;Einrichtungen für Gebäude;asset
+K0G1;0175;Ausbauten, Anbauten und Zubauten;asset
+K0G1;0180;Einbauten Pachtgrundstück;asset
+K0G1;0185;Bauten auf fremden Grundstücken;asset
+K0G1;0200;Technische Anlagen;asset
+K0G1;0205;Maschinen;asset
+K0G1;0210;Betriebsvorrichtungen;asset
+K0G1;0215;Sportvorrichtungen;asset
+K0G1;0220;Vereinsheimausstattung;asset
+K0;K0G2;Andere Anlagen, Betriebs- und Geschäftsausstattung;view
+K0G2;0250;Kraftfahrzeuge, Transportmittel;asset
+K0G2;0255;PKW;asset
+K0G2;0260;Anhänger;asset
+K0G2;0265;Pflegemaschinen;asset
+K0G2;0300;Vereinsausstattung;asset
+K0G2;0305;Vereinskleidung;asset
+K0G2;0310;Sportgeräte;asset
+K0G2;0315;Werkzeuge;asset
+K0G2;0320;Büroeinrichtung;asset
+K0G2;0330;Einrichtung Vereinsheim;asset
+K0G2;0335;Sonstiges Inventar;asset
+K0G2;0340;Geringwertige Wirtschaftsgüter ;asset
+K0G2;0341;Wirtschaftsgüter größer 150 bis 1000 Euro (Sammelposten);asset
+K0G2;0400;Sonstige Anlagen und Ausstattung;asset
+K0G2;0405;Betriebsausstattung;asset
+K0G2;0410;Geschäftsausstattung;asset
+K0G2;0415;Büroeinrichtung;asset
+K0G2;0420;Ladeneinrichtung;asset
+K0G2;0425;Werkzeuge;asset
+K0G2;0430;Einbauten;asset
+K0G2;0475;Geringwertige Wirtschaftsgüter;asset
+K0G2;0476;Wirtschaftsgüter größer 150 bis 1000 Euro (Sammelposten);asset
+K0G2;0480;Geleistete Anzahlungen Grundstücke/Gebäude;asset
+K0G2;0485;Gebäude im Bau;asset
+K0G2;0490;Geleistete Anzahlungen sonstige Sachanlagen;asset
+K0G2;0495;Sonstige Sachanlagen im Bau;asset
+K0G2;0500;Anteile an verbundenen Unternehmen;asset
+K0G2;0504;Anteile an herrschender oder mit Mehrheit beteiligter Gesellschaft (GmbH);asset
+K0G2;0505;Ausleihungen an verbundene Unternehmen;asset
+K0G2;0510;Beteiligungen;asset
+K0G2;0513;Typisch stille Beteiligung;asset
+K0G2;0516;Atypische stille Beteiligung;asset
+K0G2;0517;Andere Beteiligungen an Kapitalgesellschaften;asset
+K0G2;0518;Andere Beteiligungen an Personengesellschaften;asset
+K0G2;0530;Rechtswerte;asset
+K0G2;0531;Ablöse bezahlter Sportler;asset
+K0G2;0533;Ablöse unbezahlter Sportler bis 2556 Euro;asset
+K0G2;0534;Ablöse unbezahlter Sportler über 2556 Euro;asset
+K0G2;0540;Ausleihungen an Unternehmen, mit denen ein Beteiligungsverhältnis besteht;asset
+K0G2;0545;Wertpapiere des Anlagevermögens;asset
+K0G2;0550;Sonstige Ausleihungen;asset
+K0G2;0555;Geleistete Kautionen;asset
+K0G2;0560;Darlehen;asset
+K0;K0G3;Umlaufvermögen;view
+K0G3;0600;Roh-, Hilfs- und Betriebsstoffe;asset
+K0G3;0610;Unfertige Erzeugnisse und Leistungen;asset
+K0G3;0620;Warenbestände;asset
+K0G3;0621;Fertige Erzeugnisse;asset
+K0G3;0625;Bestände Waren/Material aus Sachspenden;asset
+K0G3;0630;Geleistete Anzahlungen;asset
+K0G3;0650;Forderungen aus Lieferungen und Leistungen;asset
+K0G3;0655;Forderungen aus Vereinsbereichen;asset
+K0G3;0660;Forderungen zu Einnahmen § 11/1, S2 EStG;asset
+K0G3;0665;Wertberichtigungen Forderungen L+L;asset
+K0G3;0680;Forderungen gegen verbundene Unternehmen;asset
+K0G3;0690;Forderungen aus Lieferungen und Leistungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht;asset
+K0G3;0700;Sonstige Vermögensgegenstände;asset
+K0G3;0705;Geldtransit;asset
+K0G3;0710;Verrechnungskonto Gewinnermittlung §4/3 EStG, nicht ergebniswirksam;asset
+K0G3;0715;Überleitungskonto Kostenstellen;asset
+K0G3;0720;Verrechnungskonto Ist-Versteuerung;asset
+K0G3;0725;Sonstige Forderungen;asset
+K0G3;0730;Gegenkonto Bruttovorumsatz;asset
+K0G3;0735;Nettoaufwand 7 % Vorumsatz;asset
+K0G3;0740;Nettoaufwand 19 % Vorumsatz;asset
+K0G3;0741;Nettoaufwand 16 % Vorumsatz;asset
+K0G3;0745;Nettoaufwand Kfz-Kosten (halber Steuersatz);asset
+K0G3;0770;Abziehbare Vorsteuer;asset
+K0G3;0775;Abziehbare Vorsteuer 7%;asset
+K0G3;0780;Abziehbare Vorsteuer 19 %;asset
+K0G3;0781;reserviert;asset
+K0G3;0785;Pauschalierte Vorsteuer 7%;asset
+K0G3;0790;Nettoaufwand 7 % aus innergemeinschaftlichem Erwerb;asset
+K0G3;0795;Nettoaufwand 19 % aus innergemeinschaftlichem Erwerb;asset
+K0G3;0800;Nettoaufwand 7 % aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug;asset
+K0G3;0805;Nettoaufwand 19 % aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug;asset
+K0G3;0810;Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb;asset
+K0G3;0815;Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb von Neufahrzeugen ohne USt-ID;asset
+K0G3;0820;Gegenkonto Vorsteuer § 4/3 EStG;asset
+K0G3;0825;Aufzuteilende Vorsteuer;asset
+K0G3;0830;Aufzuteilende Vorsteuer 7%;asset
+K0G3;0835;Aufzuteilende Vorsteuer 19 %;asset
+K0G3;0836;reserviert;asset
+K0G3;0839;Aufzuteilende Vorsteuer § 13b UStG;asset
+K0G3;0840;Aufzuteilende Vorsteuer aus innergemeinschaftlichem Erwerb;asset
+K0G3;0841;Aufzuteilende Vorsteuer Anlagevermögen;asset
+K0G3;0845;Aufzuteilende Vorsteuer Ausgaben B 4000-8000;asset
+K0G3;0849;Abziehbare Vorsteuer nach § 13b UStG;asset
+K0G3;0850;Abziehbare Vorsteuer § 13b UStG 19 %;asset
+K0G3;0851;reserviert;asset
+K0G3;0853;Vorsteuer im Folgejahr abziehbar;asset
+K0G3;0855;Auflösung Vorsteuer aus Vorjahr § 4/3 EStG;asset
+K0G3;0860;Bezahlte Einfuhrumsatzsteuer;asset
+K0G3;0865;Vorsteuer nach allgemeinen Durchschnittsätzen;asset
+K0G3;0870;Durchlaufende Posten Einnahmen;asset
+K0G3;0875;Durchlaufende Posten Ausgaben;asset
+K0G3;0880;Sonstiges Verrechnungskonto;asset
+K0G3;0885;Sammelkonto aufzuteilende Ausgaben;asset
+K0G3;0890;Sammelkonto aufzuteilende Einnahmen;asset
+K0G3;0900;Anteile an verbundenen Unternehmen;asset
+K0G3;0905;Eigene Anteile;asset
+K0G3;0910;Besitzwechsel;asset
+K0G3;0915;Sonstige Wertpapiere;asset
+K0G3;0920;Kasse;asset
+K0G3;0925;Hauptkasse;asset
+K0G3;0930;Nebenkasse 1;asset
+K0G3;0935;Nebenkasse 2;asset
+K0G3;0940;Postbank;asset
+K0G3;0945;Bank;asset
+K0G3;0950;Bank 1;asset
+K0G3;0955;Bank 2;asset
+K0G3;0960;Schecks;asset
+K0;K0G4;aktive Rechnungsabgrenzungsposten;view
+K0G4;0990;Rechnungsabgrenzungsposten aktiv;asset
+K1;K1G0;Vermögen / Eigenkapital;view
+K1G0;1000;Gebundene Rücklagen § 58 Nr. 6 AO;liability
+K1G0;1010; Rücklagen ideeller Bereich bis 2020;liability
+K1G0;1011; Rücklagen ideeller Bereich bis 2021;liability
+K1G0;1012; Rücklagen ideeller Bereich bis 2022;liability
+K1G0;1013; Rücklagen ideeller Bereich bis 2023;liability
+K1G0;1014; Rücklagen ideeller Bereich bis 2014;liability
+K1G0;1015; Rücklagen ideeller Bereich bis 2015;liability
+K1G0;1016; Rücklagen ideeller Bereich bis 2016;liability
+K1G0;1017; Rücklagen ideeller Bereich bis 2017;liability
+K1G0;1018; Rücklagen ideeller Bereich bis 2018;liability
+K1G0;1019; Rücklagen ideeller Bereich bis 2019;liability
+K1G0;1020; Rücklagen Vermögensverwaltung bis 2020;liability
+K1G0;1021; Rücklagen Vermögensverwaltung bis 2021;liability
+K1G0;1022; Rücklagen Vermögensverwaltung bis 2022;liability
+K1G0;1023; Rücklagen Vermögensverwaltung bis 2023;liability
+K1G0;1024; Rücklagen Vermögensverwaltung bis 2014;liability
+K1G0;1025; Rücklagen Vermögensverwaltung bis 2015;liability
+K1G0;1026; Rücklagen Vermögensverwaltung bis 2016;liability
+K1G0;1027; Rücklagen Vermögensverwaltung bis 2017;liability
+K1G0;1028; Rücklagen Vermögensverwaltung bis 2018;liability
+K1G0;1029; Rücklagen Vermögensverwaltung bis 2019;liability
+K1G0;1030; Rücklagen Zweckbetriebe bis 2020;liability
+K1G0;1031; Rücklagen Zweckbetriebe bis 2021;liability
+K1G0;1032; Rücklagen Zweckbetriebe bis 2022;liability
+K1G0;1033; Rücklagen Zweckbetriebe bis 2023;liability
+K1G0;1034; Rücklagen Zweckbetriebe bis 2014;liability
+K1G0;1035; Rücklagen Zweckbetriebe bis 2015;liability
+K1G0;1036; Rücklagen Zweckbetriebe bis 2016;liability
+K1G0;1037; Rücklagen Zweckbetriebe bis 2017;liability
+K1G0;1038; Rücklagen Zweckbetriebe bis 2018;liability
+K1G0;1039; Rücklagen Zweckbetriebe bis 2019;liability
+K1G0;1040; Rücklagen Geschäftsbetriebe bis 2020;liability
+K1G0;1041; Rücklagen Geschäftsbetriebe bis 2021;liability
+K1G0;1042; Rücklagen Geschäftsbetriebe bis 2022;liability
+K1G0;1043; Rücklagen Geschäftsbetriebe bis 2023;liability
+K1G0;1044; Rücklagen Geschäftsbetriebe bis 2014;liability
+K1G0;1045; Rücklagen Geschäftsbetriebe bis 2015;liability
+K1G0;1046; Rücklagen Geschäftsbetriebe bis 2016;liability
+K1G0;1047; Rücklagen Geschäftsbetriebe bis 2017;liability
+K1G0;1048; Rücklagen Geschäftsbetriebe bis 2018;liability
+K1G0;1049; Rücklagen Geschäftsbetriebe bis 2019;liability
+K1G0;1070;Freie Rücklagen;liability
+K1G0;1074;Rücklage aus Vermögensverwaltung;liability
+K1G0;1075;Rücklage aus sonstigen zeitnah zu verwendenden Mitteln;liability
+K1G0;1076;Freie Rücklagen § 58 Nr. 7b AO;liability
+K1G0;1080;Ergebnisvorträge allgemein;liability
+K1G0;1082;Vortrag ideeller Bereich;liability
+K1G0;1084;Vortrag Vermögensverwaltung;liability
+K1G0;1085;Vortrag Zweckbetriebe Sport;liability
+K1G0;1086;Vortrag sonstige Zweckbetriebe;liability
+K1G0;1087;Vortrag Geschäftsbetriebe Sport;liability
+K1G0;1088;Vortrag sonstige Geschäftsbetriebe;liability
+K1G0;1100;Grundstockvermögen;liability
+K1G0;1103;Zustiftungen;liability
+K1G0;1105;Zuführung aus Ergebnisrücklagen;liability
+K1G0;1110;Ergebnisse Vermögensumschichtung;liability
+K1G0;1115;Kapitalerhaltungsrücklage;liability
+K1G0;1120;Sonstige Ergebnisrücklagen (Falls Sie die Rücklagen nach dem Zeitpunkt der Auflösung differenziert ausweisen möchten, buchen Sie bitte auf den Konten 1000 ff);liability
+K1G0;1125;Mittelvortrag;liability
+K1G0;1140;Gezeichnetes Kapital;liability
+K1G0;1145;Kapitalrücklage;liability
+K1G0;1150;Gesetzliche Rücklage;liability
+K1G0;1153;Rücklage für eigene Anteile;liability
+K1G0;1155;Satzungsmäßige Rücklage;liability
+K1G0;1158;Andere Gewinnrücklagen (Falls Sie die Rücklagen nach dem Zeitpunkt der Auflösung differenziert ausweisen möchten, buchen Sie bitte auf den Konten 1000 ff);liability
+K1G0;1160;Jahresergebnis (Vortrag);liability
+K1G0;1170;Vereinskapital § 58 Nr. 11 AO;liability
+K1;K1G1;Sonderposten mit Rücklageanteil;view
+K1G1;1180;Sonderposten mit Rücklageanteil;liability
+K1G1;1190;Gebundene Mittel für Förderzwecke;liability
+K1G1;1195;Sonderposten für noch nicht aufwandswirksame verwendete Spenden;liability
+K1;K1G2;Rückstellungen;view
+K1G2;1200;Pensionsrückrückstellungen;liability
+K1G2;1210;Steuerrückstellungen;liability
+K1G2;1220;Sonstige Rückstellungen;liability
+K1;K1G3;Förderungsverpflichtungen;view
+K1G3;1230;Bewilligungen;liability
+K1G3;1235;Rückgängig gemachte Bewilligungen;liability
+K1;K1G4;Verbindlichkeiten;view
+K1G4;1300;Anleihen, nicht konvertibel;liability
+K1G4;1315;Anleihen, konvertibel;liability
+K1G4;1320;Verbindlichkeiten gegenüber Kreditinstituten;liability
+K1G4;1330;Erhaltene Anzahlungen auf Bestellungen;liability
+K1G4;1340;Verbindlichkeiten aus Lieferungen und Leistungen;liability
+K1G4;1345;Verbindlichkeiten Investitionen § 4/3 EStG;liability
+K1G4;1350;Schuldwechsel;liability
+K1G4;1360;Verbindlichkeiten gegenüber verbundenen Unternehmen;liability
+K1G4;1370;Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht;liability
+K1G4;1380;Verbindlichkeiten für satzungsgemäße Leistungen;liability
+K1G4;1385;Verbindlichkeiten aus erteilten Zusagen;liability
+K1G4;1390;Verbindlichkeiten aus nicht zweckentsprechenden verwendeten Mitteln;liability
+K1G4;1395;Verbindlichkeiten aus bedingt rückzahlungspflichtigen Spenden;liability
+K1G4;1800;Verbindlichkeiten gegenüber Gesellschafter/Mitglieder;liability
+K1G4;1803;Sonstige Verbindlichkeiten;liability
+K1G4;1804;Verbindlichkeiten zu Ausgaben § 11 Abs. 2 Satz 2 EStG;liability
+K1G4;1806;Erhaltene Kautionen;liability
+K1G4;1809;Verbindlichkeiten aus Steuern und Abgaben;liability
+K1G4;1812;Lohnverbindlichkeiten;liability
+K1G4;1813;Voraussichtliche Beitragsschuld gegenüber den Sozialversicherungsträgern;liability
+K1G4;1815;Gegenkonto Bruttoerlöse;liability
+K1G4;1820;Nettoerlöse 7 %;liability
+K1G4;1825;Nettoerlöse 19 %;liability
+K1G4;1826;Nettoerlöse 16 %;liability
+K1G4;1830;Nettoerlöse 0% mit Vorsteuerabzug;liability
+K1G4;1835;Nettoerlöse 0% ohne Vorsteuerabzug;liability
+K1G4;1836;Nettoerlöse 0% aus innergemeinschaftlichen Lieferungen (steuerfrei);liability
+K1G4;1840;Umsatzsteuer;liability
+K1G4;1845;Umsatzsteuer 7%;liability
+K1G4;1850;Umsatzsteuer 19 %;liability
+K1G4;1851;reserviert;liability
+K1G4;1860;Umsatzsteuer aus innergemeinschaftlichem Erwerb;liability
+K1G4;1861;Umsatzsteuer aus innergemeinschaftlichem Erwerb von Neufahrzeugen ohne USt-ID;liability
+K1G4;1864;Umsatzsteuer aus im Inland steuerpflichtigen Leistungen 7%;liability
+K1G4;1865;Umsatzsteuer aus im Inland steuerpflichtige Leistungen 19 %;liability
+K1G4;1866;Umsatzsteuer aus im Inland steuerpflichtigen EG-Lieferungen;liability
+K1G4;1867;reserviert;liability
+K1G4;1870;Umsatzsteuer aus im anderen EG-Land steuerpflichtigen Lieferung;liability
+K1G4;1871;Umsatzsteuer aus im anderen EGLand steuerpflichtigen sonstigen Leistungen;liability
+K1G4;1872;Umsatzsteuer aus innergemeinschaftlichem Erwerb ohne Vorsteuerabzug;liability
+K1G4;1880;Umsatzsteuer nicht fällig;liability
+K1G4;1885;Umsatzsteuer nicht fällig 7%;liability
+K1G4;1890;Umsatzsteuer nicht fällig 19 %;liability
+K1G4;1891;reserviert;liability
+K1G4;1895;Umsatzsteuer nicht fällig aus EG-Lieferungen;liability
+K1G4;1899;Umsatzsteuer-Abzugsverfahren oder Umsatzsteuer nach § 13b UStG 7%;liability
+K1G4;1900;reserviert;liability
+K1G4;1901;Umsatzsteuer nach § 13b UStG;liability
+K1G4;1902;Umsatzsteuer nach § 13b UStG 19 %;liability
+K1G4;1903;reserviert;liability
+K1G4;1910;Sammelkonto UmsatzsteuerVorauszahlung/Erstattung;liability
+K1G4;1911;Sammelkonto UmsatzsteuerVorauszahlung 1/11;liability
+K1G4;1912;Nachsteuer UStVA Kz. 65;liability
+K1G4;1913;Sammelkonto Umsatzsteuer Vorjahre;liability
+K1G4;1914;Sammelkonto unberechtigt ausgewiesene USt;liability
+K1G4;1915;Steuerzahlungen an andere EG-Länder;liability
+K1G4;1920;Umsatzsteuer laufendes Jahr;liability
+K1G4;1930;Einfuhrumsatzsteuerzahlung aufgeschoben;liability
+K1;K1G5;passive Rechnungsabgrenzungsposten;view
+K1G5;1990;Rechnungsabgrenzungsposten passiv;liability
+K2;K2G0;Einnahmen;view
+K2G0;2000;Einnahmen Bereich 2000;income
+K2G0;2110;Echte Mitgliedsbeiträge bis 300 Euro;income
+K2G0;2120;Echte Mitgliedsbeiträge 300-1023 Euro;income
+K2G0;2150;Aufnahmegebühren bis 300 Euro;income
+K2G0;2160;Aufnahmegebühren 300-1534 Euro;income
+K2G0;2170;Umlagen;income
+K2G0;2300;Erhaltene nicht steuerbare Zuschüsse;income
+K2G0;2301;Zuschüsse von Verbänden;income
+K2G0;2302;Zuschüsse von Behörden;income
+K2G0;2303;Sonstige Zuschüsse;income
+K2G0;2400;Sonstige Einnahmen ideeller Bereich;income
+K2G0;2410;Steuerfreie Einnahmen nicht gemeinnütziger Vereine ;income
+K2G0;2412;Zuwendungen Dritter (Sponsoren);income
+K2G0;2420;Steuerfreie Einnahmen gemeinnütziger Vereine;income
+K2G0;2421;Veräußerungserlöse aus Bereich 2000;income
+K2G0;2423;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K2G0;2450;Verrechnete/aufgeteilte Einnahmen ideeller Bereich;income
+K2G0;2451;Verrechnete Sachbezüge Arbeitnehmer;income
+K2G0;2490;Zuschreibungen;income
+K2;K2G1;Ausgaben;view
+K2G1;2500;Abschreibungen Anlagevermögen;expense
+K2G1;2501;Abschreibungen GWG;expense
+K2G1;2502;Kalkulatorische Abschreibungen;expense
+K2G1;2503;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K2G1;2510;Ausgaben Bereich 2000;expense
+K2G1;2550;Anteilige Personalkosten;expense
+K2G1;2551;Löhne;expense
+K2G1;2552;Gehälter;expense
+K2G1;2553;Abgeführte Lohnsteuer;expense
+K2G1;2554;Aufwandsentschädigungen Übungsleiter;expense
+K2G1;2555;Sozialversicherungsbeiträge;expense
+K2G1;2556;Aushilfslöhne;expense
+K2G1;2557;Sachbezüge Arbeitnehmer;expense
+K2G1;2560;Reisekostenerstattungen;expense
+K2G1;2660;Anteilige Raumkosten;expense
+K2G1;2661;Miete und Pacht;expense
+K2G1;2663;Raumnebenkosten;expense
+K2G1;2664;Reparaturen;expense
+K2G1;2700;Kosten der Mitgliederverwaltung;expense
+K2G1;2701;Büromaterial;expense
+K2G1;2702;Porto, Telefon;expense
+K2G1;2703;Einzugskosten;expense
+K2G1;2704;Sonstige Kosten;expense
+K2G1;2750;Verbrauchsabgaben und sonstige Beiträge;expense
+K2G1;2751;Abgaben Landesverband;expense
+K2G1;2752;Abgaben Fachverband;expense
+K2G1;2753;Versicherungsbeiträge;expense
+K2G1;2800;Mitgliederpflege;expense
+K2G1;2801;Vereinsmitteilungen;expense
+K2G1;2802;Geschenke, Jubiläen, Ehrungen;expense
+K2G1;2803;Ausbildungskosten;expense
+K2G1;2804;Lehr- und Jugendarbeit;expense
+K2G1;2810;Repräsentationskosten;expense
+K2G1;2892;Einstellungen in steuerliche Rücklagen;expense
+K2G1;2893;Anlagenabgänge Restbuchwerte;expense
+K2G1;2894;Steuerberatungskost.en;expense
+K2G1;2900;Sonstige Kosten ideeller Bereich;expense
+K2G1;2901;Nicht abziehbare Ausgaben;expense
+K2G1;2902;Verrechnete/aufgeteilte Kosten;expense
+K2G1;2903;Nicht abziehbare Vorsteuer;expense
+K2G1;2930;Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7 %;income
+K2G1;2935;Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 19 %;income
+K2G1;2940;Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 7%;income
+K2G1;2945;Innergemeinschaftlicher Erwerb ohne Vorsteuerabzug 19 %;income
+K3;K3G0;Ertragsneutrale Posten;view
+K3G0;3200;Steuerneutrale Einnahmen Bereich 2000;income
+K3G0;3210;Schenkungen;income
+K3G0;3211;Erbschaften;income
+K3G0;3212;Vermächtnisse;income
+K3G0;3215;Sonstige Einnahmen;income
+K3G0;3220;Erhaltene Spenden/Zuwendungen;income
+K3G0;3221;Geldzuwendungen gegen Zuwendungsbestätigungen;income
+K3G0;3223;Geldzuwendungen ohne Zuwendungsbestätigung;income
+K3G0;3225;Sachzuwendungen gegen Zuwendungsbestätigung;income
+K3G0;3227;Sachzuwendungen ohne Zuwendungsbestätigung;income
+K3G0;3230;Aufwandszuwendungen gegen Zuwendungsbestätigung;income
+K3G0;3232;Aufwandszuwendungen ohne Aufwandsbestätigungen;income
+K3G0;3240;Ertrag aus Spendenverbrauch;income
+K3G0;3250;Nicht abziehbare Ausgaben Bereich 2000;expense
+K3G0;3251;Gezahlte Spenden/Zuwendungen;expense
+K3G0;3252;Hingegebene Sachspenden/ -zuwendungen;expense
+K3G0;3260;Erbschaft-, Schenkungsteuer;expense
+K3G0;3400;Steuerneutrale Einnahmen Bereich 4000;income
+K3G0;3401;Investitionszulage;income
+K3G0;3402;Erstattete Kapitalertragsteuer;income
+K3G0;3403;Erstattete und vergütete Körperschaftsteuer;income
+K3G0;3410;Nicht steuerbare Kursgewinne Wertpapiere (über 12 Monate) 0% USt;income
+K3G0;3415;Ertrag aus pauschaler Vorsteuer § 23 a UStG;income
+K3G0;3420;Verkaufserlöse Vermögensverwaltung;income
+K3G0;3421;Verkaufserlöse Anlagevermögen 0 % USt;income
+K3G0;3422;Verkaufserlöse Anlagevermögen 7% USt;income
+K3G0;3423;Verkaufserlöse Anlagevermögen 19% USt;income
+K3G0;3424;Verkaufserlöse Wertpapiere;income
+K3G0;3450;Nicht abziehbare Ausgaben Bereich 4000;expense
+K3G0;3451;Abgezogene Kapitalertragsteuer;expense
+K3G0;3452;Abgezogene Körperschaftsteuer;expense
+K3G0;3453;Solidaritätszuschlag zur KSt;expense
+K3G0;3500;Steuerneutrale Einnahmen Bereich 5000;income
+K3G0;3515;Ertrag aus pauschaler Vorsteuer § 23 a UStG;income
+K3G0;3550;Nicht abziehbare Ausgaben Bereich 5000;expense
+K3G0;3551;Ausgaben i.S.v. § 4 Abs. 5 EStG;expense
+K3G0;3552;Geschenke nicht abzugsfähig;expense
+K3G0;3553;Nichtabzugsfähige Bewirtungskosten;expense
+K3G0;3590;Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG;expense
+K3G0;3600;Steuerneutrale Einnahmen Bereich 6000;income
+K3G0;3615;Ertrag aus pauschaler Vorsteuer § 23 a UStG;income
+K3G0;3650;Nicht abziehbare Ausgaben Bereich 6000;expense
+K3G0;3651;Ausgaben i.S.v. § 4 Abs. 5 EStG;expense
+K3G0;3652;Geschenke nicht abzugsfähig;expense
+K3G0;3653;Nicht abzugsfähige Bewirtungskosten;expense
+K3G0;3690;Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG;expense
+K3G0;3700;Steuerneutrale Einnahmen Bereich 7000;income
+K3G0;3701;Investitionszulage;income
+K3G0;3710;Steuerfreie Einnahmen zum Verlustausgleich für Teilbereich 7001;income
+K3G0;3711;Mitglieder-Umlagen zum Verlustausgleich für Teilbereich 7001;income
+K3G0;3712;Mitglieder-Zuschüsse zum Verlustausgleich für Teilbereich 7001;income
+K3G0;3715;Ertrag aus pauschaler Vorsteuer § 23 a UStG;income
+K3G0;3750;Nicht abziehbare Ausgaben Bereich 7000;expense
+K3G0;3754;Gewerbesteuer;expense
+K3G0;3755;Körperschaftsteuer;expense
+K3G0;3756;Solidaritätszuschlag zur KSt;expense
+K3G0;3770;Säumnis-/Verspätungszuschläge;expense
+K3G0;3780;Gewährte Spenden/Zuwendungen;expense
+K3G0;3781;Ausgaben i.S.v. § 4 Abs. 5 EStG;expense
+K3G0;3782;Geschenke nicht abzugsfähig;expense
+K3G0;3783;Nicht abzugsfähige Bewirtungskosten;expense
+K3G0;3790;Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG;expense
+K3G0;3795;Aufwand aus Verrechnungsposten (Gegenkonto zu 7518/7520, 7851/7868);expense
+K3G0;3800;Steuerneutrale Einnahmen Bereich 8000;income
+K3G0;3801;Investitionszulage;income
+K3G0;3815;Ertrag aus pauschaler Vorsteuer § 23 a UStG;income
+K3G0;3820;Erhaltene Steuerzinsen aus KSt/VermSt;income
+K3G0;3850;Nicht abziehbare Ausgaben Bereich 8000;expense
+K3G0;3853;Gewerbesteuer;expense
+K3G0;3854;Solidaritätszuschlag zur KSt;expense
+K3G0;3855;Körperschaftsteuer;expense
+K3G0;3857;Säumnis-/Verspätungszuschläge;expense
+K3G0;3861;Ausgaben i.S.v. § 4 Abs. 5 EStG;expense
+K3G0;3862;Geschenke nicht abzugsfähig;expense
+K3G0;3863;Nicht abzugsfähige Bewirtungskosten;expense
+K3G0;3864;Gezahlte Zinsen auf hinterzogene Steuern;expense
+K3G0;3870;Gezahlte Zinsen gemäß § 233a AO;expense
+K3G0;3873;Gezahlte Aussetzungszinsen KSt;expense
+K3G0;3890;Umsatzsteuer auf unentgeltliche Wertabgaben § 3 Abs. 1b, Abs. 9a UStG;expense
+K3G0;3895;Aufwand aus Verrechnungsposten (Gegenkonto zu 8158-8166);expense
+K3;K3G1;Ergebnisverwendungsrechnung;view
+K3G1;3950;Ergebnisvortrag aus dem Vorjahr;other
+K3G1;3953;Entnahmen aus gebundenen Ergebnisrücklagen;other
+K3G1;3955;Entnahmen a. freien Rücklagen gem. § 58 Nr. 7a AO;other
+K3G1;3956;Entnahmen a. freien Rücklagen gem. § 58 Nr. 7b AO;other
+K3G1;3957;Entnahmen aus sonstigen Rücklagen;other
+K3G1;3963;Einstellungen in die gebundenen Ergebnisrücklagen;other
+K3G1;3965;Einstellungen in die freien Rücklagen gem. § 58 Nr. 7a AO;other
+K3G1;3966;Einstellungen in die freien Rücklagen gem. § 58 Nr. 7b AO;other
+K3G1;3967;Einstellungen in die sonstigen Rücklagen;other
+K3G1;3970;Entnahmen aus der Kapitalerhaltungsrücklage;other
+K3G1;3971;Verminderung des Stiftungskapitals aus realisierten Vermögensumschichtungen;other
+K3G1;3975;Einstellungen in die Kapitalerhaltungsrücklage;other
+K3G1;3976;Erhöhung des Stiftungskapitals aus realisierten Vermögensumschichtungen;other
+K3G1;3980;Entnahmen aus der gesetzlichen Rücklage;other
+K3G1;3981;Entnahmen aus der Rücklage für eigene Anteile;other
+K3G1;3982;Entnahmen aus satzungsmäßigen Rücklagen;other
+K3G1;3983;Entnahmen aus der Kapitalrücklage;other
+K3G1;3984;Erträge aus der Kapitalherabsetzung;other
+K3G1;3985;Einstellungen in die gesetzliche Rücklage;other
+K3G1;3986;Einstellungen in die Rücklage für eigene Anteile;other
+K3G1;3987;Einstellungen in satzungsmäßige Rücklagen;other
+K3G1;3988;Einstellungen in die Kapitalrücklage nach den Vorschriften über die vereinfachte Kapitalherabsetzung;other
+K3G1;3994;Entnahmen aus dem Vereinskapital;other
+K3G1;3996;Einstellungen in das Vereinskapital;other
+K4;K4G0;Einnahmen gemeinnütziger Vereine;view
+K4G0;4000;Steuerfreie Einnahmen gemeinnütziger Vereine;income
+K4G0;4100;Einnahmen aus Vermögensverwaltung;income
+K4G0;4110;Miet- und Pachterträge 0% USt;income
+K4G0;4111;Miet- und Pachterträge 7% USt;income
+K4G0;4120;Einnahmen aus Vermietung für längere Dauer;income
+K4G0;4121;Vermietung längere Dauer 0% USt;income
+K4G0;4122;Vermietung Betriebsvorrichtungen längere Dauer 7% USt;income
+K4G0;4150;Zinserträge 0% USt;income
+K4G0;4151;Erträge aus Wertpapieren 0% USt;income
+K4G0;4152;Kursgewinne aus Wertpapieren 0% USt;income
+K4G0;4153;Zuschreibungen;income
+K4G0;4200;Erlöse von Werbeunternehmen;income
+K4G0;4201;Erlöse Werbeunternehmen 7% USt;income
+K4G0;4202;Übertragene Werbeflächenrechte;income
+K4G0;4203;Übertragene Lautsprecherwerbung;income
+K4G0;4239;Verrechnete/aufgeteilte Einnahmen;income
+K4G0;4340;Verkaufserlöse Anlagevermögen;income
+K4G0;4343;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K4G0;4398;Umgebuchte Einnahmen wg. Verlust Gemeinnützigkeit (Gegenkonto 4498);income
+K4;K4G1;Einnahmen nicht-gemeinnütziger Vereine;view
+K4G1;4400;Steuerpflichtige Einnahmen nicht gemeinnütziger Vereine;income
+K4G1;4410;Miet- und Pachterträge 0% USt;income
+K4G1;4411;Miet- und Pachterträge 19 % USt;income
+K4G1;4415;Sonstige Mieterträge;income
+K4G1;4420;Zinserträge 0% USt;income
+K4G1;4421;Wertpapiererträge;income
+K4G1;4422;Sonstige Kapitalerträge;income
+K4G1;4443;Steuerpflichtiger Kursgewinn aus Wertpapieren 0% USt;income
+K4G1;4489;Verrechnete/aufgeteilte Einnahmen;income
+K4G1;4490;Verkaufserlöse Anlagevermögen;income
+K4G1;4493;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K4G1;4498;Umgebuchte Einnahmen wg. Verlust Gemeinnützigkeit;income
+K4;K4G2;Ausgaben / Werbungskosten;view
+K4G2;4500;Abschreibungen Anlagevermögen;expense
+K4G2;4501;Abschreibungen GWG;expense
+K4G2;4502;Kalkulatorische Abschreibungen;expense
+K4G2;4503;Abschreibungen auf Finanzanlagen;expense
+K4G2;4504;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K4G2;4510;Ausgaben Bereich 4000;expense
+K4G2;4530;Außerordentliche Aufwendungen;expense
+K4G2;4600;Anlagenabgänge/Restbuchwerte;expense
+K4G2;4700;Zinsen Vermögensverwaltung;expense
+K4G2;4710;Kosten Wertpapierverwaltung;expense
+K4G2;4711;Geldbeschaffungskosten;expense
+K4G2;4712;Nebenkosten des Geldverkehrs;expense
+K4G2;4750;Grundstücksaufwendungen;expense
+K4G2;4751;Grundstücksreparaturen;expense
+K4G2;4752;Versicherungen;expense
+K4G2;4892;Einstellungen in steuerliche Rücklagen;expense
+K4G2;4894;Steuerberatungskosten;expense
+K4G2;4900;Sonstige Kosten Vermögensverwaltung;expense
+K4G2;4901;Sonstige Kosten;expense
+K4G2;4902;Verrechnete/aufgeteilte Kosten;expense
+K4G2;4904;Anteilige Umsatzsteuerzahlungen;expense
+K4G2;4905;Aufzuteilende Vorsteuer Klasse 4;expense
+K4G2;4906;Abziehbare Vorsteuer;expense
+K4G2;4907;Nicht abziehbare Vorsteuer;expense
+K6;K6G0;Sonstige Zweckbetriebe 1 (UST-pflichtig);view
+K6G0;K6G0B0;Einnahmen / Erträge;view
+K6G0B0;6000;Umsatzerlöse;income
+K6G0B0;6005;Umsatzerlöse 7%;income
+K6G0B0;6008;Vermietung Sportanlagen an Mitglieder;income
+K6G0B0;6010;Eintrittsgelder;income
+K6G0B0;6012;Zuwendungen Dritter (Sponsoren) 7% USt;income
+K6G0B0;6015;Einnahmen aus Programmverkauf;income
+K6G0B0;6050;Bestandsveränderung;income
+K6G0B0;6055;Andere aktivierte Eigenleistungen;income
+K6G0B0;6060;Sonstige betriebliche Erträge;income
+K6G0B0;6065;Einnahmen aus Nebenleistungen;income
+K6G0B0;6070;Veranstaltungsgebundene Zuschüsse;income
+K6G0B0;6075;Anteilige verrechnete Einnahmen/Umlagen;income
+K6G0B0;6080;Verkaufserlöse Anlagevermögen Zweckbetrieb 7% USt;income
+K6G0B0;6082;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K6G0B0;6085;Unentgeltliche Wertabgaben 7% USt;income
+K6G0;K6G0B1;Ausgaben / Aufwendungen;view
+K6G0B1;6170;Aufwendungen für RHB;expense
+K6G0B1;6180;Aufwendungen für bezogene Leistungen;expense
+K6G0B1;6200;Löhne und Gehälter;expense
+K6G0B1;6205;Personalkosten Übungsleiter;expense
+K6G0B1;6210;Aufwandsentschädigung § 3 Nr. 26 EStG;expense
+K6G0B1;6215;Aushilfslöhne;expense
+K6G0B1;6250;Soziale Abgaben;expense
+K6G0B1;6255;Abgeführte Lohnsteuer;expense
+K6G0B1;6260;Freiwillige soziale Aufwendungen;expense
+K6G0B1;6275;Abgaben für Altersversorgung;expense
+K6G0B1;6280;Abschreibungen Anlagevermögen;expense
+K6G0B1;6285;Abschreibungen GWG;expense
+K6G0B1;6286;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K6G0B1;6300;Sonstige betriebliche Aufwendungen;expense
+K6G0B1;6301;Werbekosten;expense
+K6G0B1;6302;Reparaturkosten Ausstattung;expense
+K6G0B1;6303;Transportkosten;expense
+K6G0B1;6305;Bewirtungskosten;expense
+K6G0B1;6310;Reisekosten;expense
+K6G0B1;6315;Reisekosten Arbeitnehmer Verpflegungsmehraufwand;expense
+K6G0B1;6320;Reisekosten Arbeitnehmer;expense
+K6G0B1;6325;Km-Geld-Erstattung;expense
+K6G0B1;6328;Veranstaltungsabhängige Kosten;expense
+K6G0B1;6329;Reinigungskosten;expense
+K6G0B1;6330;Gebäudekosten;expense
+K6G0B1;6331;Strom;expense
+K6G0B1;6332;Wasser;expense
+K6G0B1;6333;Gas, Heizung;expense
+K6G0B1;6334;Sonstige Raumkosten;expense
+K6G0B1;6335;Gema-Gebühren;expense
+K6G0B1;6336;Musikkosten;expense
+K6G0B1;6339;Miete, Pacht;expense
+K6G0B1;6340;Verwaltungskosten;expense
+K6G0B1;6341;Porto, Telefon, Bürobedarf;expense
+K6G0B1;6342;Literatur, Zeitschriften, Bücher;expense
+K6G0B1;6345;Geschenke abzugsfähig;expense
+K6G0B1;6346;Repräsentationskosten;expense
+K6G0B1;6350;Fahrzeuge, Transportmittel;expense
+K6G0B1;6353;Versicherungen;expense
+K6G0B1;6355;Verrechnete/aufgeteilte Kosten;expense
+K6G0B1;6360;Anteilige Zinsaufwendungen;expense
+K6G0B1;6362;Einstellungen in steuerliche Rücklagen;expense
+K6G0B1;6363;Anlagenabgänge Restbuchwerte;expense
+K6G0B1;6364;Steuerberatungskosten;expense
+K6G0B1;6365;Anteilige Umsatzsteuerzahlungen;expense
+K6G0B1;6375;Abziehbare Vorsteuer;expense
+K6G0B1;6377;Nicht abziehbare Vorsteuer;expense
+K6G0B1;6380;Aufzuteilende Vorsteuer;expense
+K6G0B1;6385;Aufzuteilende Posten Teilbereich 6000;expense
+K6G0B1;6450;Zinsen und ähnliche Aufwendungen;expense
+K6G0B1;6460;Außerordentliche Erträge;expense
+K6G0B1;6465;Außerordentliche Aufwendungen;expense
+K6G0B1;6475;Sonstige Steuern;expense
+K6;K6G1;Sonstige Zweckbetriebe 2 (UST-frei);view
+K6G1;K6G1B0;Einnahmen / Erträge;view
+K6G1B0;6500;Umsatzerlöse;income
+K6G1B0;6505;Umsatzerlöse 0%;income
+K6G1B0;6510;Eintrittsgelder 0%;income
+K6G1B0;6515;Einnahmen aus Programmverkauf;income
+K6G1B0;6520;Einnahmen aus Unterricht i.S.v. § 4 Nr. 22a UStG;income
+K6G1B0;6525;Einnahmen kulturelle Veranstaltungen Jugendhilfe;income
+K6G1B0;6550;Bestandsveränderung;income
+K6G1B0;6555;Andere aktivierte Eigenleistungen;income
+K6G1B0;6560;Sonstige betriebliche Erträge;income
+K6G1B0;6565;Einnahmen aus Nebenleistungen;income
+K6G1B0;6570;Veranstaltungsgebundene Zuschüsse;income
+K6G1B0;6575;Anteilige verrechnete Einnahmen/Umlagen;income
+K6G1B0;6580;Verkaufserlöse Anlagevermögen Zweckbetrieb 0%;income
+K6G1B0;6582;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K6G1B0;6585;Unentgeltliche Wertabgaben 0% USt;income
+K6G1;K6G1B1;Ausgaben / Aufwendungen;view
+K6G1B1;6670;Aufwendungen für RHB/bezogene Waren;expense
+K6G1B1;6680;Aufwendungen für bezogene Leistungen;expense
+K6G1B1;6700;Löhne und Gehälter;expense
+K6G1B1;6705;Personalkosten Übungsleiter;expense
+K6G1B1;6710;Aufwandsentschädigung § 3 Nr. 26 EStG;expense
+K6G1B1;6715;Aushilfslöhne;expense
+K6G1B1;6750;Soziale Abgaben;expense
+K6G1B1;6755;Abgeführte Lohnsteuer;expense
+K6G1B1;6760;Freiwillige soziale Aufwendungen;expense
+K6G1B1;6775;Abgaben für Altersversorgung;expense
+K6G1B1;6780;Abschreibung Anlagevermögen;expense
+K6G1B1;6785;Abschreibungen GWG;expense
+K6G1B1;6786;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K6G1B1;6800;Sonstige betriebliche Aufwendungen;expense
+K6G1B1;6805;Bewirtungskosten;expense
+K6G1B1;6810;Reisekosten;expense
+K6G1B1;6815;Reisekosten Arbeitnehmer Verpflegungsmehraufwand;expense
+K6G1B1;6820;Reisekosten Arbeitnehmer;expense
+K6G1B1;6825;Km-Geld-Erstattung;expense
+K6G1B1;6830;Gebäudekosten;expense
+K6G1B1;6831;Strom;expense
+K6G1B1;6832;Wasser;expense
+K6G1B1;6833;Gas, Heizung;expense
+K6G1B1;6834;Sonstige Raumkosten;expense
+K6G1B1;6835;Gema-Gebühren;expense
+K6G1B1;6839;Miete, Pacht;expense
+K6G1B1;6840;Verwaltungskosten;expense
+K6G1B1;6841;Porto, Telefon, Bürobedarf;expense
+K6G1B1;6845;Geschenke abzugsfähig;expense
+K6G1B1;6850;Fahrzeuge, Transportmittel;expense
+K6G1B1;6853;Versicherungen;expense
+K6G1B1;6855;Verrechnete/aufgeteilte Kosten;expense
+K6G1B1;6860;Anteilige Zinsaufwendungen;expense
+K6G1B1;6862;Einstellungen in steuerliche Rücklagen;expense
+K6G1B1;6863;Anlagenabgänge Restbuchwerte;expense
+K6G1B1;6864;Steuerberatungskosten;expense
+K6G1B1;6865;Anteilige Umsatzsteuerzahlungen;expense
+K6G1B1;6875;Abziehbare Vorsteuer;expense
+K6G1B1;6877;Nicht abziehbare Vorsteuer;expense
+K6G1B1;6880;Aufzuteilende Vorsteuer;expense
+K6G1B1;6885;Aufzuteilende Posten Teilbereich 6500;expense
+K6G1B1;6890;Unmittelbare Kosten des Unterrichts;expense
+K6G1B1;6895;Unmittelbare Kosten Darbietungen Jugendlicher und Erwachsener;expense
+K6G1B1;6950;Zinsen und ähnliche Aufwendungen;expense
+K6G1B1;6960;Außerordentliche Erträge;expense
+K6G1B1;6965;Außerordentliche Aufwendungen;expense
+K6G1B1;6975;Sonstige Steuern;expense
+K6;K6G2;Ergebnisumbuchung nach 8980;view
+K6G2;6990;Umgebuchte Einnahmen Bereich 6000 (Gegenkonto 8980);other
+K6G2;6992;Umgebuchte Ausgaben Bereich 6000 (Gegenkonto 8990);other
+K8;K8G0;sonstige Geschäftsbetriebe 1;view
+K8G0;K8G0B0;Einnahmen / Erträge;view
+K8G0B0;8000;Einnahmen aus Umsatzerlösen;income
+K8G0B0;8002;Eintrittsgelder aus geselligen Veranstaltungen;income
+K8G0B0;8004;Erlöse aus Handelswaren;income
+K8G0B0;8006;Erlöse aus Leistungen;income
+K8G0B0;8008;Erlöse aus Leihgebühren;income
+K8G0B0;8010;Erlöse aus Geldspielautomaten;income
+K8G0B0;8012;Einnahmen aus Werbung Reklameflächen;income
+K8G0B0;8014;Anzeigengeschäfte (z. B. Vereinszeitschrift, Programm);income
+K8G0B0;8016;Sonstige Werbeeinnahmen;income
+K8G0B0;8018;Kurzfristige Benutzungsgebühren von Nichtmitgliedern;income
+K8G0B0;8020;Erlöse umsatzsteuerfrei § 4 Nr. 7 ff UStG;income
+K8G0B0;8022;Einnahmen aus steuerschädlichen Lotterien und Ausspielungen § 4 Nr. 9b UStG;income
+K8G0B0;8024;Erlöse umsatzsteuerfrei § 4 Nr. 1-6 UStG;income
+K8G0B0;8026;Erlöse 7% Umsatzsteuer;income
+K8G0B0;8028;Erlöse Speisen/Getränke 7% USt (kein Verzehr an Ort und Stelle);income
+K8G0B0;8030;Erlöse 19% USt;income
+K8G0B0;8032;Erlöse 19% USt Vereinsgaststätte uä;income
+K8G0B0;8034;Erlöse Speisen/Getränke außerhalb Gaststätte 19 % USt;income
+K8G0B0;8036;Erlöse Festzeltbetrieb 19 % USt;income
+K8G0B0;8038;Getränkeumsatz;income
+K8G0B0;8042;Verrechnungskonto Geldspielautomaten;income
+K8G0B0;8044;Provisionserlöse;income
+K8G0B0;8046;Erlösschmälerungen;income
+K8G0B0;8047;Gewährte Skonti;income
+K8G0B0;8048;Nicht steuerbare Umsätze;income
+K8G0B0;8050;Umsatzsteuervergütungen;income
+K8G0B0;8052;Unentgeltliche Wertabgaben;income
+K8G0B0;8054;Entnahme von Gegenständen § 3/1b/1 UStG (Waren);income
+K8G0B0;8056;Unentgeltliche Zuwendung Gegenstände § 3/1b/2, 3 UStG;income
+K8G0B0;8090;Bestandsveränderung;income
+K8G0B0;8095;Andere aktivierte Eigenleistungen;income
+K8G0B0;8100;Sonstige betriebliche Erträge;income
+K8G0B0;8102;Erlöse Verkauf Anlagevermögen Teilbereich 8001;income
+K8G0B0;8104;Verwendung von Gegenständen § 3/9a/1 UStG;income
+K8G0B0;8106;Unentgeltliche Leistungserbringung § 3/9a/1 UStG;income
+K8G0B0;8108;Erlöse Abfallverwertung;income
+K8G0B0;8110;Erlöse Leergut;income
+K8G0B0;8112;Anteilige/verrechnete Einnahmen;income
+K8G0B0;8114;Erhaltene Zinsen auf Betriebsteuern;income
+K8G0B0;8130;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K8G0B0;8140;Zuschreibungen;income
+K8G0;K8G0B1;Ausgaben / Aufwendungen;view
+K8G0B1;8150;Wareneinkauf;expense
+K8G0B1;8152;Wareneingang 7% Vorsteuer;expense
+K8G0B1;8154;Wareneingang 19% Vorsteuer;expense
+K8G0B1;8156;Handelswaren;expense
+K8G0B1;8158;Tatsächliche Kosten Altpapiersammlungen;expense
+K8G0B1;8160;Tatsächliche Kosten Altmaterialsammlungen;expense
+K8G0B1;8162;Ausgabenpauschale 95% Altpapier (Gegenkonto 3895);expense
+K8G0B1;8164;Ausgabenpauschale 80% Altmaterial (Gegenkonto 3895);expense
+K8G0B1;8166;Ertrag aus Stornokosten Altpapier/Altmaterial;expense
+K8G0B1;8168;Rohstoffe;expense
+K8G0B1;8170;Hilfs- und Betriebsstoffe;expense
+K8G0B1;8172;Bezugs- und Nebenkosten;expense
+K8G0B1;8174;Erhaltene Skonti;expense
+K8G0B1;8200;Fremdleistungen;expense
+K8G0B1;8210;Löhne und Gehälter;expense
+K8G0B1;8212;Aushilfslöhne;expense
+K8G0B1;8214;Bedienungsgelder;expense
+K8G0B1;8230;Sozialversicherungsbeiträge;expense
+K8G0B1;8232;Abgeführte Lohnsteuer;expense
+K8G0B1;8235;Abgaben für Altersversorgung;expense
+K8G0B1;8240;Abschreibungen Anlagevermögen;expense
+K8G0B1;8242;Abschreibungen GWG;expense
+K8G0B1;8243;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K8G0B1;8244;Anlagenabgänge/Restbuchwerte;expense
+K8G0B1;8246;Kalkulatorische Abschreibungen;expense
+K8G0B1;8270;Umlaufvermögen, unüblich hoch;expense
+K8G0B1;8300;Anteilige Raumkosten;expense
+K8G0B1;8302;Miete, Pacht;expense
+K8G0B1;8303;Strom;expense
+K8G0B1;8304;Wasser;expense
+K8G0B1;8305;Gas, Heizung;expense
+K8G0B1;8306;Reinigungskosten;expense
+K8G0B1;8308;Verwaltungskosten;expense
+K8G0B1;8310;Büromaterial;expense
+K8G0B1;8312;Porto;expense
+K8G0B1;8313;Telefon;expense
+K8G0B1;8314;Zinsen, Bankspesen;expense
+K8G0B1;8316;Gewerbesteuer;expense
+K8G0B1;8318;Versicherungen, Beiträge;expense
+K8G0B1;8320;Sonstige Abgaben;expense
+K8G0B1;8322;Fahrzeugkosten;expense
+K8G0B1;8324;Pkw-Kosten;expense
+K8G0B1;8326;Garagenmieten;expense
+K8G0B1;8327;Mietleasing Kfz;expense
+K8G0B1;8328;Fremdfahrzeuge;expense
+K8G0B1;8330;Werbe- und Reisekosten;expense
+K8G0B1;8332;Geschenke abzugsfähig;expense
+K8G0B1;8334;Bewirtungskosten 80%-Anteil;expense
+K8G0B1;8336;Reisekosten Arbeitnehmer;expense
+K8G0B1;8338;Reisekosten Arbeitnehmer Verpflegungsmehraufwand;expense
+K8G0B1;8340;Reisekosten Arbeitnehmer;expense
+K8G0B1;8342;Km-Geld-Erstattung;expense
+K8G0B1;8370;Einstellungen in steuerliche Rücklagen;expense
+K8G0B1;8373;Anlagenabgänge Restbuchwerte;expense
+K8G0B1;8374;Steuerberatungskosten;expense
+K8G0B1;8378;Anteilige Umsatzsteuerzahlungen;expense
+K8G0B1;8380;Aufzuteilende Vorsteuer;expense
+K8G0B1;8382;Abziehbare Vorsteuer;expense
+K8G0B1;8384;Nicht abziehbare Vorsteuer;expense
+K8G0B1;8400;Erträge aus Beteiligungen;expense
+K8G0B1;8410;Erträge aus anderen Wertpapieren;expense
+K8G0B1;8420;Sonstige Zinsen und ähnliche Erträge;expense
+K8G0B1;8430;Abschreibungen auf Finanzanlagen;expense
+K8G0B1;8440;Zinsen und ähnliche Aufwendungen;expense
+K8G0B1;8450;Außerordentliche Erträge;expense
+K8G0B1;8460;Außerordentliche Aufwendungen;expense
+K8G0B1;8480;Sonstige Steuern;expense
+K8;K8G1;sonstige Geschäftsbetriebe 2;view
+K8G1;K8G1B0;Einnahmen / Erträge;view
+K8G1B0;8500;Umsatzerlöse;income
+K8G1B0;8590;Bestandsveränderungen;income
+K8G1B0;8595;Andere aktivierte Eigenleistungen;income
+K8G1B0;8600;Sonstige betriebliche Erträge;income
+K8G1B0;8622;Verkaufserlöse Anlagevermögen;income
+K8G1B0;8630;Erträge aus der Auflösung einer steuerlichen Rücklage;income
+K8G1B0;8640;Zuschreibungen;income
+K8G1;K8G1B1;Ausgaben / Aufwendungen;view
+K8G1B1;8650;Aufwendungen für RHB/bezogene Waren;expense
+K8G1B1;8700;Aufwendungen für bezogene Leistungen;expense
+K8G1B1;8710;Löhne und Gehälter;expense
+K8G1B1;8720;Sozialversicherungsbeiträge;expense
+K8G1B1;8735;Abgaben für Altersversorgung;expense
+K8G1B1;8740;Abschreibungen Anlagevermögen;expense
+K8G1B1;8745;Abschreibungen GWG;expense
+K8G1B1;8746;Abschreibungen auf Sammelposten Wirtschaftsgüter;expense
+K8G1B1;8770;Umlaufvermögen, unüblich hoch;expense
+K8G1B1;8800;Sonstige betriebliche Aufwendungen;expense
+K8G1B1;8830;Einstellungen in steuerliche Rücklagen;expense
+K8G1B1;8833;Anlagenabgänge Restbuchwerte;expense
+K8G1B1;8834;Steuerberatungskosten;expense
+K8G1B1;8838;Anteilige Umsatzsteuerzahlungen;expense
+K8G1B1;8840;Aufzuteilende Vorsteuer;expense
+K8G1B1;8842;Abziehbare Vorsteuer;expense
+K8G1B1;8844;Nicht abziehbare Vorsteuer;expense
+K8G1B1;8850;Erträge aus Beteiligungen;expense
+K8G1B1;8860;Erträge aus anderen Wertpapieren;expense
+K8G1B1;8870;Sonstige Zinsen und ähnliche Erträge;expense
+K8G1B1;8880;Abschreibungen auf Finanzanlagen;expense
+K8G1B1;8890;Zinsen und ähnliche Aufwendungen;expense
+K8G1B1;8900;Außerordentliche Erträge;expense
+K8G1B1;8910;Außerordentliche Aufwendungen;expense
+K8G1B1;8930;Sonstige Steuern;expense
+K8;K8G2;ertragssteuerpflichtig gewordene Zweckbetriebe;view
+K8G2;8980;Umgebuchte Einnahmen bisheriger Zweckbetrieb;other
+K8G2;8985;Erlöse 19% USt;other
+K8G2;8986;Aufwand aus Storno Erlöse 7 % USt;other
+K8G2;8987;Gegenkonto zu 8985/8986;other
+K8G2;8990;Umgebuchte Ausgaben bisheriger Zweckbetrieb;other
+K9;K9G0;statistische Konten;view
+K9G0;9000;Saldovorträge Sachkonten;other
+K9G0;9008;Saldovorträge Debitoren;other
+K9G0;9009;Saldovorträge Kreditoren;other
+K9G0;9060;Offene Posten aus 1990;other
+K9G0;9070;Offene Posten aus 2000;other
+K9G0;9071;Offene Posten aus 2001;other
+K9G0;9072;Offene Posten aus 2002;other
+K9G0;9073;Offene Posten aus 2003;other
+K9G0;9074;Offene Posten aus 2004;other
+K9G0;9075;Offene Posten aus 2005;other
+K9G0;9076;Offene Posten aus 2006;other
+K9G0;9077;Offene Posten aus 2007;other
+K9G0;9078;Offene Posten aus 2008;other
+K9G0;9079;Offene Posten aus 2009;other
+K9G0;9080;Offene Posten aus 2010;other
+K9G0;9081;Offene Posten aus 2011;other
+K9G0;9082;Offene Posten aus 2012;other
+K9G0;9083;Offene Posten aus 2013;other
+K9G0;9084;Offene Posten aus 2014;other
+K9G0;9085;Offene Posten aus 2015;other
+K9G0;9086;Offene Posten aus 2016;other
+K9G0;9090;Summenvortragskonto;other
+K9G0;9091;Offene Posten aus 1991;other
+K9G0;9092;Offene Posten aus 1992;other
+K9G0;9093;Offene Posten aus 1993;other
+K9G0;9094;Offene Posten aus 1994;other
+K9G0;9095;Offene Posten aus 1995;other
+K9G0;9096;Offene Posten aus 1996;other
+K9G0;9097;Offene Posten aus 1997;other
+K9G0;9098;Offene Posten aus 1998;other
+K9G0;9099;Offene Posten aus 1999;other
+K9G0;9240;Investitionsverbindlichkeiten bei den Leistungsverbindlichkeiten;other
+K9G0;9241;Investitionsverbindlichkeiten aus Sachanlagenkäufen bei Leistungsverbindlichkeiten;other
+K9G0;9242;Investitionsverbindlichkeiten aus Käufen von immateriellen Vermögensgegenständen bei Leistungsverbindlichkeiten;other
+K9G0;9243;Investitionsverbindlichkeiten aus Käufen von Finanzanlagen bei Leistungsverbindlichkeiten;other
+K9G0;9244;Gegenkonto zu Konten 9240-9243;other
+K9G0;9245;Forderungen aus Sachanlagenverkäufen bei sonstigen Vermögensgegenständen;other
+K9G0;9246;Forderungen aus Verkäufen immaterieller Vermögensgegenstände bei sonstigen Vermögensgegenständen;other
+K9G0;9247;Forderungen aus Verkäufen von Finanzanlagen bei sonstigen Vermögensgegenständen;other
+K9G0;9249;Gegenkonto zu Konten 9245-9247;other
+K9;K9G1;statistische Konten für in der Bilanz auszuweisende Haftungsverhältnisse;view
+K9G1;9270;Gegenkonto zu Konten 9273-9279 (Soll-Buchung);other
+K9G1;9273;Verbindlichkeiten aus Bürgschaften, Wechsel- und Scheckbürgschaften;other
+K9G1;9279;Verpflichtungen aus Treuhandvermögen;other
+K9;K9G2;statistische Konten für Gewinnzuschlag;view
+K9G2;9490;Statistisches Konto für den Gewinnzuschlag nach §§ 6b, 6c und 7g a.F. EStG (Haben);other
+K9G2;9491;Statistisches Konto für den Gewinnzuschlag nach §§ 6b, 6c und 7g a.F. EStG (Soll) - Gegenkonto zu 9490;other
+K9;K9G3;statistische Werte für Anlage EÜR;view
+K9G3;9500;Forderungen aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz oder eines Kleinunternehmers;other
+K9G3;9501;Forderungen aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz;other
+K9G3;9502;Forderungen aus steuerfreien oder nicht steuerbaren Lieferungen und Leistungen;other
+K9G3;9505;Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz;other
+K9G3;9506;Verbindlichkeiten aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz;other
+K9G3;9507;Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuer;other
+K9G3;9510;Erlöse zum allgemeinen Umsatzsteuersatz;other
+K9G3;9511;Erlöse zum ermäßigten Umsatzsteuersatz;other
+K9G3;9512;Erlöse steuerfrei und nicht steuerbar;other
+K9G3;9515;Wareneinkauf zum allgemeinen Umsatzsteuersatz;other
+K9G3;9516;Wareneinkauf zum ermäßigten Umsatzsteuersatz;other
+K9G3;9517;Wareneinkauf ohne Vorsteuerabzug;other
+K9G3;9520;Abschreibungen auf Gebäude;other
+K9G3;9521;Abschreibungen auf Kfz;other
+K9G3;9525;Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung der Gebäude;other
+K9G3;9526;Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung der Kfz;other
+K9G3;9527;Absetzung für außergewöhnliche technische und wirtschaftliche Abnutzung sonstiger Wirtschaftsgüter;other
+K9G3;9530;Sonderabschreibungen nach § 7g Abs. 1 und 2 EStG (ohne Kfz);other
+K9G3;9531;Sonderabschreibungen nach § 7g Abs. 1 und 2 EStG (für Kfz);other
+K9G3;9535;Umsatzsteuer in den Forderungen zum allgemeinen Umsatzsteuersatz;other
+K9G3;9536;Umsatzsteuer in den Forderungen zum ermäßigten Umsatzsteuersatz;other
+K9G3;9540;Vorsteuer in den Verbindlichkeiten zum allgemeinen Umsatzsteuersatz;other
+K9G3;9541;Vorsteuer in den Verbindlichkeiten zum ermäßigten Umsatzsteuersatz;other
+K9G3;9599;Gegenkonto zu 9500 bis 9598;other
+K9G3;9600;Faktor pauschale Vorsteuer 7%;other
+K9G3;9620;Fiktive Einnahmen aus Leistungen Dritter;other
+K9G3;9621;Fiktive Ausgaben durch Zahlung Dritter;other
+K9G3;9630;Nichtanzusetzende Einnahmen Klasse 7 und 8 (§ 64 III AO);other
+K9G3;9631;Nichtanzusetzende Einnahmen Klasse 5 (§ 67a I AO);other
+K9G3;9632;Hinzuzurechnende Einnahmen Klasse 7 und 8 (§ 64 III AO);other
+K9G3;9633;Hinzuzurechnende Einnahmen Klasse 5 (§ 67a I AO);other
+K9G3;9650;Umsatzsteuer Teilbereich 5001;other
+K9G3;9651;Umsatzsteuer Klasse 7;other
+K9G3;9652;Umsatzsteuer Klasse 8;other
+K9G3;9690;Gegenkonto für statistische Buchungen;other
+K9G3;9800;Lösch- und Korrekturschlüssel;other
+K9G3;9850;Gegenkonto zu 9882 bis 9889 - für Vereinsergebnis/Stiftungsergebnis/ Jahresüberschuss;other
+K9G3;9860;Gegenkonto zu 9882 bis 9889 - für Ergebnisvortrag/Mittelvortrag/ Bilanzgewinn;other
+K9G3;9882;Ergebnisse Bereich 2000 und Teilbereich 3200;other
+K9G3;9884;Ergebnisse Bereich 4000 und Teilbereich 3400;other
+K9G3;9885;Ergebnisse Bereich 5000 und Teilbereich 3500;other
+K9G3;9886;Ergebnisse Bereich 6000 und Teilbereich 3600;other
+K9G3;9887;Ergebnisse Bereich 7000 und Teilbereich 3700;other
+K9G3;9888;Ergebnisse Bereich 8000 und Teilbereich 3800;other
+K9G3;9889;Ergebnisvorträge allgemein;other
+K9G3;9970;Investitionsabzugsbetrag § 7g Abs. 1 EStG, außerbilanziell (Soll);other
+K9G3;9971;Investitionsabzugsbetrag § 7g Abs. 1 EStG, außerbilanziell (Haben) - Gegenkonto zu 9970;other
+K9G3;9972;Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG, außerbilanziell (Haben);other
+K9G3;9973;Hinzurechnung Investitionsabzugsbetrag § 7g Abs. 2 EStG, außerbilanziell (Soll) - Gegenkonto zu 9972;other
+K9G3;9974;Rückgängigmachung § 7g Abs. 3, 4 EStG und Erhöhung Investitionsabzugsbetrag im früheren Abzugsjahr;other
+K9G3;9975;Rückgängigmachung § 7g Abs. 3, 4 EStG und Erhöhung Investitionsabzugsbetrag im früheren Abzugsjahr Gegenkonto zu 9974;other
+skr49;PERS;Personenkonten;view
+PERS;K10;Debitoren (Bereich 10000-69999);view
+PERS;K70;Kreditoren (Bereich 70000-99999);view
