@@ -87,7 +87,6 @@ class MachineManagement(http.Controller):
         }
         return json.dumps(machine_info)
 
-
     @http.route('/machine_management/isAccessAllowed/<int:machine_id>/<int:user_id>', auth='public')  # , type='http'
     def index(self, machine_id, user_id, **kw):
         machine = http.request.env['lab.machine'].search([('id', '=', machine_id)])
