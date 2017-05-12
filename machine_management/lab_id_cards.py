@@ -15,7 +15,8 @@ class machine_management2(models.Model):
     @api.onchange('card_id')
     @api.depends('card_id')
     def _check_change(self):
-        self.card_id = self.card_id.replace(' ', '').upper()
+        if self.card_id:
+            self.card_id = self.card_id.replace(' ', '').upper()
 
     @api.one
     @api.constrains('assigned_client', 'status')
