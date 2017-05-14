@@ -53,7 +53,7 @@ class MachineManagement(http.Controller):
         uid = http.request.env.context.get('uid')
         if not uid:
             return "-1"
-        return uid
+        return str(uid)
 
 
     @http.route('/machine_management/getUsers/', auth='user')  # , type='http'
