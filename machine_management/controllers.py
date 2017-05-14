@@ -48,6 +48,14 @@ class MachineManagement(http.Controller):
         return out
 
 
+    @http.route('/machine_management/getCurrentUser', auth='user')  # , type='http'
+    def getCurrentuser(self, **kw):
+        uid = http.request.env.context.get('uid')
+        if not uid:
+            return "-1"
+        return uid
+
+
     @http.route('/machine_management/getUsers/', auth='user')  # , type='http'
     def getUsers(self, **kw):
         users = http.request.env['res.partner'].search([])
