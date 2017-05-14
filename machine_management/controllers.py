@@ -39,7 +39,7 @@ class MachineManagement(http.Controller):
         for t in id_cards:
             o = {
                 'card_id': t.card_id,
-                'assigned_client': t.assigned_client.name,
+                'assigned_client': t.assigned_client.id,
                 'status': t.status,
                 'card_type': t.card_type,
             }
