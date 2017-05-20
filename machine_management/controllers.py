@@ -17,7 +17,7 @@ class MachineManagement(http.Controller):
                     'machine_parameter_1': t.machine_parameter_1,
                     'machine_parameter_2': t.machine_parameter_2,
                     'machine_parameter_3': t.machine_parameter_3,
-                    'machine_parameter_4': t.machine_parameter_1,
+                    'machine_parameter_4': t.machine_parameter_4,
                     'description': t.description,
                     'image': t.image,
                     'virtual_available': t.virtual_available,
@@ -28,6 +28,11 @@ class MachineManagement(http.Controller):
         else:
             return "[]"
 
+
+    @http.route('/machine_management/registerUsage/<data>', auth='user')
+    def registerUsage(self, data, **kw):
+        print(http.request.params['params'])
+        return "{'status':'done'}"
 
     @http.route('/machine_management/getIdCards/', auth='user')  # , type='http'
     def getIdCards(self, **kw):
