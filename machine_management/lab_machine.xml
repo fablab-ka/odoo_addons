@@ -54,5 +54,9 @@
         <menuitem name="Lab" id="lab_menu" sequence="85"/>
         <menuitem name="Machine Management" id="machine_man_menu" sequence="10" parent="lab_menu"/>
         <menuitem name="Machines" id="machines_menu" parent="machine_man_menu" action="machines_action"/>
+
+        <!--<menuitem name="Inventory" id="inventory_menu" sequence="50" parent="lab_menu"/>-->
+        <!--<menuitem name="Products" id="products_menu" parent="inventory_menu" action="product_template_action_product"/>-->
+
     </data>
 </openerp>

@@ -4,3 +4,5 @@ lab_machine_access_man,lab_machine_rule_man,model_lab_machine,lab_manager_group,
 lab_id_cards_access,id_cards_rule,model_lab_id_cards,machine_user_group,1,0,0,0
 lab_id_cards_access_man,id_cards_rule_man,model_lab_id_cards,lab_manager_group,1,1,1,1
 lab_machine_access_access_man,machine_access_rules_man,model_lab_access,lab_manager_group,1,1,1,1
+product_tag_access,product_tag_rule,model_product_tag,machine_user_group,1,0,0,0
+product_tag_access_man,product_tag_rule_man,model_product_tag,machine_user_group,1,1,1,1

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from openerp import http
 import json
+import datetime
+import pytz
 
 
 class MachineManagement(http.Controller):
@@ -29,9 +31,118 @@ class MachineManagement(http.Controller):
             return "[]"
 
 
-    @http.route('/machine_management/registerUsage/<data>', auth='user')
-    def registerUsage(self, data, **kw):
-        print(http.request.params['params'])
+    @http.route('/machine_management/registerUsage/', auth='user')
+    def registerUsage(self, **kw):
+        data = json.loads(http.request.params['params'])
+        print(data)
+        if data['user_id'] < 1:
+            print("registerUsage: user_id " + str(data['user_id']) + " is invalid!")
+            return "{'error': 'user_id < 1'}"
+            data['user_id'] = 3; #TODO: add error handling
+        #Build a new Sale Order (SO)
+        sale_orders = http.request.env['sale.order']
+        products = http.request.env['product.template']
+        sale_order_lines = http.request.env['sale.order.line']
+        partners =  http.request.env['res.partner']
+        customer = partners.search([('id', '=', data['user_id'])])
+        client = partners.search([('id', '=', data['client_id'])])
+
+        if not customer:
+            out = "User with ID " + str(data['user_id']) + " not found!"
+            print(out)
+            return "{'error': '" + out + "'}"
+        if not client:
+            out = "Client with ID " + str(data['client_id']) + " not found!"
+            print(out)
+            return "{'error': '" + out + "'}"
+
+        service = products.search([('id', '=', data['odoo_service_id'])])
+        if not service:
+            out = "Service with ID " + str(data['odoo_service_id']) + " not found!"
+            print(out)
+            return "{'error': '" + out + "'}"
+        product = products.search([('id', '=', data['odoo_product_id'])])
+        if not product:
+            out = "Product with ID " + str(data['odoo_product_id']) + " not found!"
+            print(out)
+            return "{'error': '" + out + "'}"
+
+        uid = http.request.env.context.get('uid')
+        machine_user = http.request.env['res.users'].search([('id', '=', uid)])
+        if not machine_user:
+            out = "Machine User with ID " + str(uid) + " not found!"
+            print(out)
+            return "{'error': '" + out + "'}"
+
+
+        so = sale_orders.create({
+            'partner_id': client.id,
+        })
+
+        line = sale_order_lines.create({
+            'product_id': service.id,
+            'name': service.name,
+            'order_id':so.id,
+            'product_uom': service.uom_id.id,
+            'product_uom_qty': 1 #TODO calculate
+        })
+        line.product_id_change()
+        line.product_uom_change()
+        line._compute_invoice_status()
+        line._compute_amount()
+        line._get_to_invoice_qty()
+        line._get_price_reduce()
+
+
+        line = sale_order_lines.create({
+            'product_id': product.id,
+            'name': product.name,
+            'order_id': so.id,
+            'product_uom': product.uom_id.id,
+            'product_uom_qty': data['odoo_material_qty']
+        })
+        line.product_id_change()
+        line.product_uom_change()
+        line._compute_invoice_status()
+        line._compute_amount()
+        line._get_to_invoice_qty()
+        line._get_price_reduce()
+
+        so.onchange_partner_id()
+        so._get_invoiced()
+        so._prepare_invoice()
+        so.action_confirm()
+
+        #create invoice
+        so.action_invoice_create()
+
+        #now "deliver" the goods to the customer
+        for picking in so.picking_ids:
+            picking.force_assign()
+            picking.do_transfer()
+
+        #TODO get access rights to account.move
+        # #confirm the invoices
+        # for invoice in so.invoice_ids:
+        #     invoice.action_invoice_open()
+
+        #create a machine access
+        accesses = http.request.env['lab.access']
+
+        #TODO get correct machine
+        #TODO assign correct client
+        user_tz = http.request.env.user.tz or pytz.utc
+        local = pytz.timezone(user_tz)
+        access = accesses.create({
+            'machine': 1,
+            'client': client.id,
+            'user': customer.id,
+            'start_time': datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
+            'end_time': datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
+            'sale_order_id': so.id,
+        })
+        print(access.start_time)
+
         return "{'status':'done'}"
 
     @http.route('/machine_management/getIdCards/', auth='user')  # , type='http'
