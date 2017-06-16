@@ -56,14 +56,14 @@ class MachineManagement(http.Controller):
             print(out)
             return "{'error': '" + out + "'}"
 
-        service = products.search([('id', '=', data['odoo_service_id'])])
+        service = products.search([('id', '=', data['odoo_service'])])
         if not service:
-            out = "Service with ID " + str(data['odoo_service_id']) + " not found!"
+            out = "Service with ID " + str(data['odoo_service']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
-        product = products.search([('id', '=', data['odoo_product_id'])])
+        product = products.search([('id', '=', data['odoo_product'])])
         if not product:
-            out = "Product with ID " + str(data['odoo_product_id']) + " not found!"
+            out = "Product with ID " + str(data['odoo_product']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
 
