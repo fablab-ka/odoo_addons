@@ -74,7 +74,6 @@ class MachineManagement(http.Controller):
             print(out)
             return "{'error': '" + out + "'}"
 
-
         so = sale_orders.create({
             'partner_id': client.id,
         })
