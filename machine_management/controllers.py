@@ -130,8 +130,8 @@ class MachineManagement(http.Controller):
 
         #TODO get correct machine
         #TODO assign correct client
-        user_tz = http.request.env.user.tz or pytz.utc
-        local = pytz.timezone(user_tz)
+        # user_tz = http.request.env.user.tz or pytz.utc
+        # local = pytz.timezone(user_tz)
         access = accesses.create({
             'machine': 1,
             'client': client.id,
@@ -140,7 +140,6 @@ class MachineManagement(http.Controller):
             'end_time': datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
             'sale_order_id': so.id,
         })
-        print(access.start_time)
 
         return "{'status':'done'}"
 
