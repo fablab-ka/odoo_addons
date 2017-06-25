@@ -26,11 +26,11 @@
             <field name="name">Machine Access Tree View</field>
             <field name="model">lab.access</field>
             <field name="arch" type="xml">
-                <tree>
+                <tree default_order="start_time desc">
                     <field name="user"/>
                     <field name="machine"/>
                     <field name="start_time"/>
-                    <field name="end_time"/>
+                    <field name="duration" widget="float_time" style="text-align:left;"/>
                 </tree>
             </field>
         </record>
