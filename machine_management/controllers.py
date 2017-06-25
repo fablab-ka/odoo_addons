@@ -139,6 +139,7 @@ class MachineManagement(http.Controller):
             'start_time': datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
             'end_time': datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
             'sale_order_id': so.id,
+            'info': data,
         })
 
         return "{'status':'done'}"

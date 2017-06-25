@@ -13,6 +13,7 @@ class machine_job(models.Model):
     end_time = fields.Datetime(string="End time", required=True)
     sale_order_id = fields.Many2one(string="Sale Order", comodel_name="sale.order")
     duration = fields.Float(string="Duration (min.)", compute='compute_duration')
+    info = fields.Text(string="Info")
 
     @api.depends('start_time', 'end_time')
     def compute_duration(self):
