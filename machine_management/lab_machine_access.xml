@@ -11,6 +11,7 @@
                             <field name="user"/>
                             <field name="start_time"/>
                             <field name="end_time"/>
+                            <field name="duration"  widget="float_time"/>
                             <field name="sale_order_id"/>
                         </group>
                     </sheet>
