@@ -78,12 +78,17 @@ class MachineManagement(http.Controller):
             'partner_id': client.id,
         })
 
+        #Calculate job duration
+        start = datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
+        end = datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
+        duration = (end - start).total_seconds() / 60
+
         line = sale_order_lines.create({
             'product_id': service.id,
             'name': service.name,
             'order_id':so.id,
             'product_uom': service.uom_id.id,
-            'product_uom_qty': 1 #TODO calculate
+            'product_uom_qty': duration
         })
         line.product_id_change()
         line.product_uom_change()
