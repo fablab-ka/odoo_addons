@@ -31,7 +31,7 @@ class MachineManagement(http.Controller):
             return "[]"
 
 
-    @http.route('/machine_management/registerUsage/', auth='user')
+    @http.route('/machine_management/registerUsage/', auth='user', csrf=False)
     def registerUsage(self, **kw):
         data = json.loads(http.request.params['params'])
         print(data)
