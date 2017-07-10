@@ -7,6 +7,7 @@
             <field name="code">1520</field>
             <field name="name">Finanzwechsel</field>
             <field name="reconcile" eval="True"/>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
         </record>
         
@@ -626,6 +627,7 @@
         <record id="chart_skr49_0650" model="account.account.template">
             <field name="code">0650</field>
             <field name="name">Forderungen aus Lieferungen und Leistungen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -633,6 +635,7 @@
         <record id="chart_skr49_0655" model="account.account.template">
             <field name="code">0655</field>
             <field name="name">Forderungen aus Vereinsbereichen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -640,6 +643,7 @@
         <record id="chart_skr49_0660" model="account.account.template">
             <field name="code">0660</field>
             <field name="name">Forderungen zu Einnahmen § 11/1, S2 EStG</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -647,6 +651,7 @@
         <record id="chart_skr49_0665" model="account.account.template">
             <field name="code">0665</field>
             <field name="name">Wertberichtigungen Forderungen L+L</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -654,6 +659,7 @@
         <record id="chart_skr49_0680" model="account.account.template">
             <field name="code">0680</field>
             <field name="name">Forderungen gegen verbundene Unternehmen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -661,6 +667,7 @@
         <record id="chart_skr49_0690" model="account.account.template">
             <field name="code">0690</field>
             <field name="name">Forderungen aus Lieferungen und Leistungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -703,6 +710,7 @@
         <record id="chart_skr49_0725" model="account.account.template">
             <field name="code">0725</field>
             <field name="name">Sonstige Forderungen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -934,6 +942,7 @@
         <record id="chart_skr49_0870" model="account.account.template">
             <field name="code">0870</field>
             <field name="name">Durchlaufende Posten Einnahmen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -941,6 +950,7 @@
         <record id="chart_skr49_0875" model="account.account.template">
             <field name="code">0875</field>
             <field name="name">Durchlaufende Posten Ausgaben</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1053,6 +1063,7 @@
         <record id="chart_skr49_0960" model="account.account.template">
             <field name="code">0960</field>
             <field name="name">Schecks</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1606,6 +1617,7 @@
         <record id="chart_skr49_1320" model="account.account.template">
             <field name="code">1320</field>
             <field name="name">Verbindlichkeiten gegenüber Kreditinstituten</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1620,6 +1632,7 @@
         <record id="chart_skr49_1340" model="account.account.template">
             <field name="code">1340</field>
             <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1627,6 +1640,7 @@
         <record id="chart_skr49_1345" model="account.account.template">
             <field name="code">1345</field>
             <field name="name">Verbindlichkeiten Investitionen § 4/3 EStG</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1641,6 +1655,7 @@
         <record id="chart_skr49_1360" model="account.account.template">
             <field name="code">1360</field>
             <field name="name">Verbindlichkeiten gegenüber verbundenen Unternehmen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1648,6 +1663,7 @@
         <record id="chart_skr49_1370" model="account.account.template">
             <field name="code">1370</field>
             <field name="name">Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1655,6 +1671,7 @@
         <record id="chart_skr49_1380" model="account.account.template">
             <field name="code">1380</field>
             <field name="name">Verbindlichkeiten für satzungsgemäße Leistungen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1662,6 +1679,7 @@
         <record id="chart_skr49_1385" model="account.account.template">
             <field name="code">1385</field>
             <field name="name">Verbindlichkeiten aus erteilten Zusagen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1669,6 +1687,7 @@
         <record id="chart_skr49_1390" model="account.account.template">
             <field name="code">1390</field>
             <field name="name">Verbindlichkeiten aus nicht zweckentsprechenden verwendeten Mitteln</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1676,6 +1695,7 @@
         <record id="chart_skr49_1395" model="account.account.template">
             <field name="code">1395</field>
             <field name="name">Verbindlichkeiten aus bedingt rückzahlungspflichtigen Spenden</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1683,6 +1703,7 @@
         <record id="chart_skr49_1800" model="account.account.template">
             <field name="code">1800</field>
             <field name="name">Verbindlichkeiten gegenüber Gesellschafter/Mitglieder</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1690,6 +1711,7 @@
         <record id="chart_skr49_1803" model="account.account.template">
             <field name="code">1803</field>
             <field name="name">Sonstige Verbindlichkeiten</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1697,6 +1719,7 @@
         <record id="chart_skr49_1804" model="account.account.template">
             <field name="code">1804</field>
             <field name="name">Verbindlichkeiten zu Ausgaben § 11 Abs. 2 Satz 2 EStG</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1711,6 +1734,7 @@
         <record id="chart_skr49_1809" model="account.account.template">
             <field name="code">1809</field>
             <field name="name">Verbindlichkeiten aus Steuern und Abgaben</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -1718,6 +1742,7 @@
         <record id="chart_skr49_1812" model="account.account.template">
             <field name="code">1812</field>
             <field name="name">Lohnverbindlichkeiten</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5750,6 +5775,7 @@
         <record id="chart_skr49_9245" model="account.account.template">
             <field name="code">9245</field>
             <field name="name">Forderungen aus Sachanlagenverkäufen bei sonstigen Vermögensgegenständen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5757,6 +5783,7 @@
         <record id="chart_skr49_9246" model="account.account.template">
             <field name="code">9246</field>
             <field name="name">Forderungen aus Verkäufen immaterieller Vermögensgegenstände bei sonstigen Vermögensgegenständen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5764,6 +5791,7 @@
         <record id="chart_skr49_9247" model="account.account.template">
             <field name="code">9247</field>
             <field name="name">Forderungen aus Verkäufen von Finanzanlagen bei sonstigen Vermögensgegenständen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5785,6 +5813,7 @@
         <record id="chart_skr49_9273" model="account.account.template">
             <field name="code">9273</field>
             <field name="name">Verbindlichkeiten aus Bürgschaften, Wechsel- und Scheckbürgschaften</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5813,6 +5842,7 @@
         <record id="chart_skr49_9500" model="account.account.template">
             <field name="code">9500</field>
             <field name="name">Forderungen aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz oder eines Kleinunternehmers</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5820,6 +5850,7 @@
         <record id="chart_skr49_9501" model="account.account.template">
             <field name="code">9501</field>
             <field name="name">Forderungen aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5827,6 +5858,7 @@
         <record id="chart_skr49_9502" model="account.account.template">
             <field name="code">9502</field>
             <field name="name">Forderungen aus steuerfreien oder nicht steuerbaren Lieferungen und Leistungen</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5834,6 +5866,7 @@
         <record id="chart_skr49_9505" model="account.account.template">
             <field name="code">9505</field>
             <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum allgemeinen Umsatzsteuersatz</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5841,6 +5874,7 @@
         <record id="chart_skr49_9506" model="account.account.template">
             <field name="code">9506</field>
             <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen zum ermäßigten Umsatzsteuersatz</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5848,6 +5882,7 @@
         <record id="chart_skr49_9507" model="account.account.template">
             <field name="code">9507</field>
             <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen ohne Vorsteuer</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5946,6 +5981,7 @@
         <record id="chart_skr49_9535" model="account.account.template">
             <field name="code">9535</field>
             <field name="name">Umsatzsteuer in den Forderungen zum allgemeinen Umsatzsteuersatz</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
@@ -5953,6 +5989,7 @@
         <record id="chart_skr49_9536" model="account.account.template">
             <field name="code">9536</field>
             <field name="name">Umsatzsteuer in den Forderungen zum ermäßigten Umsatzsteuersatz</field>
+            <field name="reconcile" eval="True"/>
             <field name="user_type_id" ref="l10n_de.account_type_other"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
