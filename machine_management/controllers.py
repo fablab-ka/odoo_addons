@@ -138,7 +138,7 @@ class MachineManagement(http.Controller):
         # user_tz = http.request.env.user.tz or pytz.utc
         # local = pytz.timezone(user_tz)
         access = accesses.create({
-            'machine': 3,#TODO: De-Fuckup it
+            'machine': 2,#TODO: De-Fuckup it
             'client': client.id,
             'user': customer.id,
             'start_time': datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
