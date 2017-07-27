@@ -81,7 +81,7 @@ class MachineManagement(http.Controller):
         #Calculate job duration
         start = datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
         end = datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
-        duration = (end - start).total_seconds() / 60
+        duration = int(date['duration']) / 60 #from seconds to minutes
 
         line = sale_order_lines.create({
             'product_id': service.id,
@@ -127,8 +127,8 @@ class MachineManagement(http.Controller):
 
         #TODO get access rights to account.move
         # #confirm the invoices
-        # for invoice in so.invoice_ids:
-        #     invoice.action_invoice_open()
+        for invoice in so.invoice_ids:
+            invoice.action_invoice_open()
 
         #create a machine access
         accesses = http.request.env['lab.access']
