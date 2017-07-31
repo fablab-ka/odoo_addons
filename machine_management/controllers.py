@@ -81,7 +81,7 @@ class MachineManagement(http.Controller):
         #Calculate job duration
         start = datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
         end = datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}")
-        duration = int(data['duration']) / 60 #from seconds to minutes
+        duration = int(data['duration']) #from seconds to minutes
 
         line = sale_order_lines.create({
             'product_id': service.id,
