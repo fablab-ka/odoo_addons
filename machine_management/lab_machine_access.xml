@@ -30,7 +30,7 @@
                     <field name="user"/>
                     <field name="machine"/>
                     <field name="start_time"/>
-                    <field name="duration" widget="float_time" style="text-align:left;"/>
+                    <field name="duration" style="text-align:left;"/>
                 </tree>
             </field>
         </record>
