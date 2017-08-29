@@ -20,6 +20,7 @@
                                 <group>
                                     <field name="machine_tag_1"/>
                                     <field name="machine_tag_2"/>
+                                    <field name="machine_user"/>
                                 </group>
                             </page>
                         </notebook>

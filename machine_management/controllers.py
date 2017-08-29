@@ -199,9 +199,14 @@ class MachineManagement(http.Controller):
         return out
 
 
+    @http.route('/machine_management/getMachine/', auth='user')
     @http.route('/machine_management/getMachine/<int:machine_id>', auth='user')  # , type='http'
     def getMachine(self, machine_id, **kw):
-        m = http.request.env['lab.machine'].search([('id', '=', machine_id)])
+        uid = http.request.env.context.get('uid')
+        if not uid:
+            return "-1"
+        m = http.request.env['lab.machine'].search([('machine_user', '=', uid)])
+        # m = http.request.env['lab.machine'].search([('id', '=', machine_id)])
         if len(m) != 1:
             return "[]"
         user_ids = [x['id'] for x in m.user_ids]
