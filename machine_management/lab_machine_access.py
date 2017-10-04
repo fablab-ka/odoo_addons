@@ -12,6 +12,6 @@ class machine_job(models.Model):
     start_time = fields.Datetime(string="Start time", required=True)
     end_time = fields.Datetime(string="End time", required=True)
     sale_order_id = fields.Many2one(string="Sale Order", comodel_name="sale.order")
-    duration = fields.Float(string="Duration (min.)", store=True, default=0)
+    duration = fields.Float(string="Duration (min.)")
     info = fields.Text(string="Info")
 

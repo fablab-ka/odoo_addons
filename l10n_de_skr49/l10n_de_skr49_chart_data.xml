@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+
+        <record id="chart_skr49_1520" model="account.account.template">
+            <field name="code">1520</field>
+            <field name="name">Finanzwechsel</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+        </record>
+        <record id="l10n_chart_de_skr49" model="account.chart.template">
+            <field name="name">Deutscher Kontenplan SKR49</field>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="transfer_account_id" ref="chart_skr49_1520"/>
+            <!--<field name="type">view</field>-->
+        </record>
+        <record id="chart_skr49_1520" model="account.account.template">
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <!--<record id="chart_skr49_" model="account.account.template">-->
+            <!--<field name="code">DIV</field>-->
+            <!--<field name="name">Sonstige Konten</field>-->
+            <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
+        <!--</record>-->
+
+        <record id="chart_skr49_0555" model="account.account.template">
+            <field name="code">0555</field>
+            <field name="name">geleistete Kautionen</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_0655" model="account.account.template">
+            <field name="code">0655</field>
+            <field name="name">Forderungen aus Vereinsbereichen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_0870" model="account.account.template">
+            <field name="code">0870</field>
+            <field name="name">Durchlaufende Posten</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_9000" model="account.account.template">
+            <field name="code">9000</field>
+            <field name="name">Saldenvorträge Sachkonten</field>
+            <field name="reconcile" eval="False"/>
+            <field name="user_type_id" ref="l10n_de.account_type_other"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2110" model="account.account.template">
+            <field name="code">2110</field>
+            <field name="name">Mitgliedsbeiträge</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_3220" model="account.account.template">
+            <field name="code">3220</field>
+            <field name="name">Erhaltene Spenden / Zuwendungen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2511" model="account.account.template">
+            <field name="code">2511</field>
+            <field name="name">Projekt Lasercutter</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2512" model="account.account.template">
+            <field name="code">2512</field>
+            <field name="name">Projekt Werkstatt Aussenbereich</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2513" model="account.account.template">
+            <field name="code">2513</field>
+            <field name="name">Projekt Labnet</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2514" model="account.account.template">
+            <field name="code">2514</field>
+            <field name="name">Projekt Umzug</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2661" model="account.account.template">
+            <field name="code">2661</field>
+            <field name="name">Miete und Pacht</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        
+        <record id="chart_skr49_2663" model="account.account.template">
+            <field name="code">2663</field>
+            <field name="name">Raumnebenkosten</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        
+        <record id="chart_skr49_2702" model="account.account.template">
+            <field name="code">2702</field>
+            <field name="name">Telefon, Internet, Server</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_2753" model="account.account.template">
+            <field name="code">2753</field>
+            <field name="name">Versicherungsbeiträge</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6840" model="account.account.template">
+            <field name="code">6840</field>
+            <field name="name">Bankgebühren</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6500" model="account.account.template">
+            <field name="code">6500</field>
+            <field name="name">Umsatzerlöse</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6501" model="account.account.template">
+            <field name="code">6501</field>
+            <field name="name">Einnahmen Lasercutter</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6502" model="account.account.template">
+            <field name="code">6502</field>
+            <field name="name">Einnahmen 3D-Drucker</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6503" model="account.account.template">
+            <field name="code">6503</field>
+            <field name="name">Einnahmen Werkstatt</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6504" model="account.account.template">
+            <field name="code">6504</field>
+            <field name="name">Einnahmen Zweckbetrieb Hexagon-Bausatz</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6301" model="account.account.template">
+            <field name="code">6301</field>
+            <field name="name">Werbekosten</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6671" model="account.account.template">
+            <field name="code">6671</field>
+            <field name="name">Ausgaben Lasercutter</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6672" model="account.account.template">
+            <field name="code">6672</field>
+            <field name="name">Ausgaben 3D-Drucker</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6673" model="account.account.template">
+            <field name="code">6673</field>
+            <field name="name">Werkstattbedarf</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6674" model="account.account.template">
+            <field name="code">6674</field>
+            <field name="name">Ausgaben Hexagon-Bausatz</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6675" model="account.account.template">
+            <field name="code">6675</field>
+            <field name="name">Ausgaben Drehbank</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6676" model="account.account.template">
+            <field name="code">6676</field>
+            <field name="name">Ausgaben CNC-Fräse</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_6800" model="account.account.template">
+            <field name="code">6800</field>
+            <field name="name">sonstige betriebliche Aufwendungen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_8019" model="account.account.template">
+            <field name="code">8019</field>
+            <field name="name">Hexagon Lizenzgebühren</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_8020" model="account.account.template">
+            <field name="code">8020</field>
+            <field name="name">Einnahmen Lebensmittel Getränke</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_8021" model="account.account.template">
+            <field name="code">8021</field>
+            <field name="name">Einnahmen Lebensmittel Speissen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_revenue"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_8150" model="account.account.template">
+            <field name="code">8150</field>
+            <field name="name">Ausgaben Lebensmittel Getränke</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_8151" model="account.account.template">
+            <field name="code">8151</field>
+            <field name="name">Ausgaben Lebensmittel Speissen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_10000" model="account.account.template">
+            <field name="code">DEBI</field>
+            <field name="name">Debitoren (Bereich 10000-69999)</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="l10n_de.account_type_other"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+        <record id="chart_skr49_70000" model="account.account.template">
+            <field name="code">CRED</field>
+            <field name="name">Kreditoren (Bereich 70000-99999)</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="l10n_de.account_type_other"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+
+
+
+        <record id="chart_skr49_4422" model="account.account.template">
+            <field name="code">4422</field>
+            <field name="name">sonstige Kapitalerträge</field>
+            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="reconcile" eval="True"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        <record id="chart_skr49_4901" model="account.account.template">
+            <field name="code">4901</field>
+            <field name="name">sonstige Kosten</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        <record id="chart_skr49_1340" model="account.account.template">
+            <field name="code">1340</field>
+            <field name="name">Verbindlichkeiten aus Lieferungen und Leistungen</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_payable"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        <record id="chart_skr49_6670" model="account.account.template">
+            <field name="code">6670</field>
+            <field name="name">Aufwendungen für bezogene Waren</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_expenses"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        <!--<record id="chart_skr49_1840" model="account.account.template">-->
+            <!--<field name="code">1840</field>-->
+            <!--<field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb</field>-->
+            <!--<field name="reconcile" eval="True"/>-->
+            <!--<field name="user_type_id" ref="account.data_account_type_current_liabilities"/>-->
+            <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
+        <!--</record>-->
+        <!--<record id="chart_skr49_0810" model="account.account.template">-->
+            <!--<field name="code">0810</field>-->
+            <!--<field name="name">Abzeihbare Vorsteuer aus innergemeinschaftlichem Erwerb</field>-->
+            <!--<field name="user_type_id" ref="account.data_account_type_current_liabilities"/>-->
+            <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
+        <!--</record>-->
+
+        <record id="l10n_chart_de_skr49" model="account.chart.template">
+            <field name="cash_account_code_prefix">0930</field>
+            <field name="bank_account_code_prefix">0945</field>
+            <field name="income_currency_exchange_account_id" ref="chart_skr49_4422"/>
+            <field name="expense_currency_exchange_account_id" ref="chart_skr49_4901"/>
+            <field name="property_account_receivable_id" ref="chart_skr49_0655"/>
+            <field name="property_account_payable_id" ref="chart_skr49_1340"/>
+            <field name="property_account_expense_categ_id" ref="chart_skr49_6670"/>
+            <field name="property_account_income_categ_id" ref="chart_skr49_6500"/>
+            <field name="code_digits" eval="4"/>
+        </record>
+    </data>
+</openerp>
