@@ -346,7 +346,7 @@
             <!--<field name="name">Abzeihbare Vorsteuer aus innergemeinschaftlichem Erwerb</field>-->
             <!--<field name="user_type_id" ref="account.data_account_type_current_liabilities"/>-->
             <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
-        <!--</record>-->
+        <!--</record>-->systemctl
 
         <record id="l10n_chart_de_skr49" model="account.chart.template">
             <field name="cash_account_code_prefix">0930</field>
