@@ -52,7 +52,7 @@
             <field name="code">9000</field>
             <field name="name">Saldenvorträge Sachkonten</field>
             <field name="reconcile" eval="False"/>
-            <field name="user_type_id" ref="l10n_de.account_type_other"/>
+            <field name="user_type_id" ref="account.data_account_type_other_income"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
 
@@ -288,23 +288,6 @@
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
 
-        <record id="chart_skr49_10000" model="account.account.template">
-            <field name="code">DEBI</field>
-            <field name="name">Debitoren (Bereich 10000-69999)</field>
-            <field name="reconcile" eval="True"/>
-            <field name="user_type_id" ref="l10n_de.account_type_other"/>
-            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
-        </record>
-
-        <record id="chart_skr49_70000" model="account.account.template">
-            <field name="code">CRED</field>
-            <field name="name">Kreditoren (Bereich 70000-99999)</field>
-            <field name="reconcile" eval="True"/>
-            <field name="user_type_id" ref="l10n_de.account_type_other"/>
-            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
-        </record>
-
-
 
         <record id="chart_skr49_4422" model="account.account.template">
             <field name="code">4422</field>
@@ -334,19 +317,19 @@
             <field name="user_type_id" ref="account.data_account_type_expenses"/>
             <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
         </record>
-        <!--<record id="chart_skr49_1840" model="account.account.template">-->
-            <!--<field name="code">1840</field>-->
-            <!--<field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb</field>-->
-            <!--<field name="reconcile" eval="True"/>-->
-            <!--<field name="user_type_id" ref="account.data_account_type_current_liabilities"/>-->
-            <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
-        <!--</record>-->
-        <!--<record id="chart_skr49_0810" model="account.account.template">-->
-            <!--<field name="code">0810</field>-->
-            <!--<field name="name">Abzeihbare Vorsteuer aus innergemeinschaftlichem Erwerb</field>-->
-            <!--<field name="user_type_id" ref="account.data_account_type_current_liabilities"/>-->
-            <!--<field name="chart_template_id" ref="l10n_chart_de_skr49"/>-->
-        <!--</record>-->systemctl
+        <record id="chart_skr49_1840" model="account.account.template">
+            <field name="code">1840</field>
+            <field name="name">Umsatzsteuer aus innergemeinschaftlichem Erwerb</field>
+            <field name="reconcile" eval="True"/>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
+        <record id="chart_skr49_0810" model="account.account.template">
+            <field name="code">0810</field>
+            <field name="name">Abziehbare Vorsteuer aus innergemeinschaftlichem Erwerb</field>
+            <field name="user_type_id" ref="account.data_account_type_current_liabilities"/>
+            <field name="chart_template_id" ref="l10n_chart_de_skr49"/>
+        </record>
 
         <record id="l10n_chart_de_skr49" model="account.chart.template">
             <field name="cash_account_code_prefix">0930</field>

@@ -5,6 +5,11 @@ import datetime
 import pytz
 
 
+def printDebug(message):
+    print(message)
+    return "{'error': '" + str(message) + "'}"
+
+
 class MachineManagement(http.Controller):
     @http.route('/machine_management/getProductByTag/<int:tag_id>/', auth='public')  # , type='http'
     def getProductByTag(self, tag_id, **kw):
@@ -35,24 +40,18 @@ class MachineManagement(http.Controller):
     def registerUsage(self, **kw):
         data = json.loads(http.request.params['params'])
         print(data)
-        if data['user_id'] < 1:
-            print("registerUsage: user_id " + str(data['user_id']) + " is invalid!")
-            return "{'error': 'user_id < 1'}"
-            data['user_id'] = 3; #TODO: add error handling
+        if not 'client' in data:
+            print("registerUsage: no client!")
+            return "{'error': 'no client sent'}"
         #Build a new Sale Order (SO)
         sale_orders = http.request.env['sale.order']
         products = http.request.env['product.template']
         sale_order_lines = http.request.env['sale.order.line']
         partners =  http.request.env['res.partner']
-        customer = partners.search([('id', '=', data['user_id'])])
-        client = partners.search([('id', '=', data['client_id'])])
+        client = partners.search([('email', '=', data['client'])])
 
-        if not customer:
-            out = "User with ID " + str(data['user_id']) + " not found!"
-            print(out)
-            return "{'error': '" + out + "'}"
         if not client:
-            out = "Client with ID " + str(data['client_id']) + " not found!"
+            out = "Client with Email " + str(data['client']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
 
@@ -73,6 +72,10 @@ class MachineManagement(http.Controller):
             out = "Machine User with ID " + str(uid) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
+        print(machine_user['id'])
+        machine = http.request.env['lab.machine'].search([('machine_user', '=', machine_user['id'])])
+        if not machine:
+            return printDebug("No machine with user " + machine_user + " found!")
 
         so = sale_orders.create({
             'partner_id': client.id,
@@ -103,7 +106,7 @@ class MachineManagement(http.Controller):
             'name': product.name,
             'order_id': so.id,
             'product_uom': product.uom_id.id,
-            'product_uom_qty': data['odoo_material_qty']
+            'product_uom_qty': data['material_qty']
         })
         line.product_id_change()
         line.product_uom_change()
@@ -138,9 +141,9 @@ class MachineManagement(http.Controller):
         # user_tz = http.request.env.user.tz or pytz.utc
         # local = pytz.timezone(user_tz)
         access = accesses.create({
-            'machine': 2,#TODO: De-Fuckup it
+            'machine': machine.id,
             'client': client.id,
-            'user': customer.id,
+            'user': client.id,
             'start_time': datetime.datetime.strptime(str(data['start']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
             'end_time': datetime.datetime.strptime(str(data['end']), "{u'$date': u'%Y-%m-%dT%H:%M:%S'}"),
             'duration': duration,
@@ -149,6 +152,7 @@ class MachineManagement(http.Controller):
         })
 
         return "{'status':'done'}"
+
 
     @http.route('/machine_management/getIdCards/', auth='user')  # , type='http'
     def getIdCards(self, **kw):
