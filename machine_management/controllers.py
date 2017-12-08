@@ -39,7 +39,6 @@ class MachineManagement(http.Controller):
     @http.route('/machine_management/registerUsage/', auth='user', csrf=False)
     def registerUsage(self, **kw):
         data = json.loads(http.request.params['params'])
-        print(data)
         if not 'client' in data:
             print("registerUsage: no client!")
             return "{'error': 'no client sent'}"
@@ -72,7 +71,6 @@ class MachineManagement(http.Controller):
             out = "Machine User with ID " + str(uid) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
-        print(machine_user['id'])
         machine = http.request.env['lab.machine'].search([('machine_user', '=', machine_user['id'])])
         if not machine:
             return printDebug("No machine with user " + machine_user + " found!")
