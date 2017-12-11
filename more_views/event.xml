@@ -30,9 +30,9 @@
                                     <small t-if="not event.address_id" class="label label-info">Online</small>
                                     <small t-if="not event.website_published" class="label label-danger">unpublished</small>
                                 </h3>
-                                <h4>
-                                    <i class="fa fa-clock-o"></i> <span itemprop="startDate" t-field="event.with_context(tz=event.date_tz).date_begin" t-options='{"hide_seconds":"True"}'> </span> <i>to</i> <span itemprop="endDate" t-field="event.with_context(tz=event.date_tz).date_end" t-options='{"hide_seconds":"True"}'> </span>
-                                </h4>
+                                <h3>
+                                    <i class="fa fa-clock-o"></i> <span itemprop="startDate" t-field="event.with_context(tz=event.date_tz).date_begin" t-options='{"hide_seconds":"True"}'> </span>
+                                </h3>
                                 <div class="text-muted" t-if="event.event_type_id">
                                     <i class="fa fa-tag"></i> <span t-field="event.event_type_id"/>
                                 </div>
