@@ -39,6 +39,7 @@ class MachineManagement(http.Controller):
     @http.route('/machine_management/registerUsage/', auth='user', csrf=False)
     def registerUsage(self, **kw):
         data = json.loads(http.request.params['params'])
+        print(data) #ToDo: delete
         if not 'client' in data:
             print("registerUsage: no client!")
             return "{'error': 'no client sent'}"
@@ -53,7 +54,8 @@ class MachineManagement(http.Controller):
             out = "Client with Email " + str(data['client']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
-
+        client = client[0]
+        print(client)
         service = products.search([('id', '=', data['odoo_service'])])
         if not service:
             out = "Service with ID " + str(data['odoo_service']) + " not found!"
@@ -74,6 +76,8 @@ class MachineManagement(http.Controller):
         machine = http.request.env['lab.machine'].search([('machine_user', '=', machine_user['id'])])
         if not machine:
             return printDebug("No machine with user " + machine_user + " found!")
+
+        print("checks are complete")
 
         so = sale_orders.create({
             'partner_id': client.id,
@@ -134,10 +138,6 @@ class MachineManagement(http.Controller):
         #create a machine access
         accesses = http.request.env['lab.access']
 
-        #TODO get correct machine
-        #TODO assign correct client
-        # user_tz = http.request.env.user.tz or pytz.utc
-        # local = pytz.timezone(user_tz)
         access = accesses.create({
             'machine': machine.id,
             'client': client.id,
