@@ -29,3 +29,20 @@ class product_tag(models.Model):
 
     name = fields.Char(string="Name", required=True)
     products = fields.Many2many(comodel_name="product.template", string="Products")
+
+
+class Users(models.Model):
+    _name = "res.users"
+    _inherit = "res.users"
+
+    @api.onchange('email')
+    def on_change_email(self):
+        self.partner_id.email = self.email
+        print("new mail " + str(self.mail))
+
+    @api.model
+    def create(self, vals):
+        user = super(Users, self).create(vals)
+        print("mail on create " + str(user.email))
+        user.partner_id.email = user.email
+        return user

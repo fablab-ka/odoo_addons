@@ -35,7 +35,6 @@ class MachineManagement(http.Controller):
         else:
             return "[]"
 
-
     @http.route('/machine_management/registerUsage/', auth='user', csrf=False)
     def registerUsage(self, **kw):
         data = json.loads(http.request.params['params'])
@@ -47,14 +46,14 @@ class MachineManagement(http.Controller):
         sale_orders = http.request.env['sale.order']
         products = http.request.env['product.template']
         sale_order_lines = http.request.env['sale.order.line']
-        partners =  http.request.env['res.partner']
-        client = partners.search([('email', '=', data['client'])])
+        users =  http.request.env['res.users']
+        client = users.search([('email', '=', data['client'])])
 
         if not client:
             out = "Client with Email " + str(data['client']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
-        client = client[0]
+        client = client[0]['partner_id']
         print(client)
         service = products.search([('id', '=', data['odoo_service'])])
         if not service:
