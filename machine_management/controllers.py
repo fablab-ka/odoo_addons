@@ -47,13 +47,13 @@ class MachineManagement(http.Controller):
         products = http.request.env['product.template']
         sale_order_lines = http.request.env['sale.order.line']
         users =  http.request.env['res.users']
-        client = users.search([('email', '=', data['client'])])
+        client = users.search([('login', '=', data['client'])])
 
         if not client:
             out = "Client with Email " + str(data['client']) + " not found!"
             print(out)
             return "{'error': '" + out + "'}"
-        client = client[0]['partner_id']
+        client = client['partner_id']
         print(client)
         service = products.search([('id', '=', data['odoo_service'])])
         if not service:
