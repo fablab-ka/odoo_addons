@@ -31,6 +31,7 @@ Also fixes a bug resulting in Partners based on LDAP to have their Email set to 
 
     # always loaded
     'data': [
+        'ldap_config.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

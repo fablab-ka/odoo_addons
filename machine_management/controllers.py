@@ -150,12 +150,12 @@ class MachineManagement(http.Controller):
 
         return "{'status':'done'}"
 
-    # @http.route('/machine_management/register_payment/', auth='user', csrf=False)
-    # def register_payment(self, **kw):
-    #     data = json.loads(http.request.params['params'])
-    #     amount = data['amount']
-    #     sale_orders = http.request.env['sale.order']
-    #     products = http.request.env['product.template']
+    @http.route('/machine_management/register_payment/', auth='user', csrf=False)
+    def register_payment(self, **kw):
+        data = json.loads(http.request.params['params'])
+        amount = data['amount']
+        sale_orders = http.request.env['sale.order']
+        products = http.request.env['product.template']
 
     @http.route('/machine_management/getIdCards/', auth='user')  # , type='http'
     def getIdCards(self, **kw):

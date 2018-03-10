@@ -22,7 +22,7 @@ class CompanyLDAP(models.Model):
         """
 
         return {
-            'name': ldap_entry[1]['displayName'][0],
+            'name': ldap_entry[1]['cn'][0],
             'email': ldap_entry[1]['mail'][0],
             'login': login,
             'company_id': conf['company'][0]
