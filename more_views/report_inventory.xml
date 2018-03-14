@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+    <record model="ir.sequence.type" id="seq_type_emp_id">
+        <field name="name">Serial Number</field>
+        <field name="code">stock.production.lot</field>
+    </record>
+    <record model="ir.sequence" id="seq_emp_id">
+        <field name="name">Serial Number</field>
+        <field name="code">stock.production.lot</field>
+        <field name="prefix">SN</field>
+        <field name="padding">6</field>
+    </record>
+
+    <record id="paperformat_045x036" model="report.paperformat">
+        <field name="name">Label 45x36mm</field>
+        <field name="default" eval="False"/>
+        <field name="format">custom</field>
+        <field name="page_height">36</field>
+        <field name="page_width">45</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">1</field>
+        <field name="margin_bottom">0</field>
+        <field name="margin_left">0</field>
+        <field name="margin_right">1</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">0</field>
+        <field name="dpi">140</field>
+    </record>
+
+    <report
+        string="Inventory Label"
+        id="action_report_inventory"
+        model="stock.production.lot"
+        report_type="qweb-pdf"
+        name="more_views.report_inventory_label"
+        file="more_views.report_inventory_label"
+        paperformat="paperformat_045x036"
+    />
+
+
+<template id="report_inventory_label">
+    <t t-call="report.html_container">
+        <t t-foreach="docs" t-as="o">
+            <t>
+                <div class="page" style="font-size:30px">
+                    <table class="table table-condensed" cellspacing="2"
+                           style="border-bottom: 0px solid white !important; padding:0;margin:0;wifth=200px">
+                        <tr>
+                            <td>
+                                <span style="white-space:nowrap" t-field="o.product_id.name"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'
+                                    % ('Code128', o.name, 4000, 20)"
+                                    style="width:550;height:20px"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td style="vertical-align:top">
+                                            SN: <span style="white-space:nowrap;display:inline-block;width=100px;vertical-align:top"  t-field="o.name"/>
+                                        </td>
+                                        <td>
+                                            <img  t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'
+                                                % ('QR', 'odoo.fablab-karlsruhe.de/prod/' + o.name, 1600, 1600)"
+                                                style="width:280px;height:280px;float:center"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</data>
+</odoo>

@@ -47,10 +47,9 @@ class CompanyLDAP(models.Model):
             dn = "cn=" + email + "," + conf['ldap_base']
             mod_list = {
                 "objectClass": ["inetOrgPerson"],
-                "cn": [str(name)],
-                "sn": [str(name.split(' ')[-1])],
+                "cn": [(name)],
+                "sn": [(name.split(' ')[-1])],
                 "mail": [str(email)],  # IA5
-                #"password": [str(password)],
             }
 
             conn.add_s(dn, modlist.addModlist(mod_list))

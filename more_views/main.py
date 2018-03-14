@@ -133,3 +133,6 @@ class WebsiteEventController(http.Controller):
         }
 
         return request.render("more_views.event_index", values)
+
+
+

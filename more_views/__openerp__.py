@@ -27,6 +27,7 @@ Adds more views and forms:
     # always loaded
     'data': [
         "event.xml",
+        "report_inventory.xml"
     ],
     # only loaded in demonstration mode
     'demo': [
