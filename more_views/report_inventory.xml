@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <data>
-    <record model="ir.sequence.type" id="seq_type_emp_id">
-        <field name="name">Serial Number</field>
-        <field name="code">stock.production.lot</field>
-    </record>
-    <record model="ir.sequence" id="seq_emp_id">
-        <field name="name">Serial Number</field>
-        <field name="code">stock.production.lot</field>
-        <field name="prefix">SN</field>
-        <field name="padding">6</field>
-    </record>
+    <!--<record model="ir.sequence.type" id="seq_type_emp_id">-->
+        <!--<field name="name">Serial Number</field>-->
+        <!--<field name="code">stock.production.lot</field>-->
+    <!--</record>-->
+    <!--<record model="ir.sequence" id="seq_emp_id">-->
+        <!--<field name="name">Serial Number</field>-->
+        <!--<field name="code">stock.production.lot</field>-->
+        <!--<field name="prefix">SN</field>-->
+        <!--<field name="padding">6</field>-->
+    <!--</record>-->
 
     <record id="paperformat_045x036" model="report.paperformat">
         <field name="name">Label 45x36mm</field>
