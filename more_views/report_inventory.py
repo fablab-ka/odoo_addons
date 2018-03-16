@@ -6,7 +6,7 @@ import werkzeug
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
-from odoo import fields, http, _
+from odoo import models, fields, http, _
 from odoo.addons.website.models.website import slug
 from odoo.http import request
 

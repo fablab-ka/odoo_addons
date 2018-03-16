@@ -9,7 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class AuthSignupHome(main.Home):
 
-    def _signup_with_values(self, token, values):
+    def _signup_with _values(self, token, values):
         print("test!" + str(token) + str(values))
         Ldap = main.request.env['res.company.ldap']
         for conf in Ldap.get_ldap_dicts():
@@ -47,8 +47,8 @@ class CompanyLDAP(models.Model):
             dn = "cn=" + email + "," + conf['ldap_base']
             mod_list = {
                 "objectClass": ["inetOrgPerson"],
-                "cn": [(name)],
-                "sn": [(name.split(' ')[-1])],
+                "cn": [str(name)],
+                "sn": [str(name.split(' ')[-1])],
                 "mail": [str(email)],  # IA5
             }
 

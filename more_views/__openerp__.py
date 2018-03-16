@@ -22,12 +22,13 @@ Adds more views and forms:
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['website_event'],
+    'depends': ['website_event', 'machine_management'],
 
     # always loaded
     'data': [
         "event.xml",
-        "report_inventory.xml"
+        "report_inventory.xml",
+        #"report_invoice.xml"
     ],
     # only loaded in demonstration mode
     'demo': [
