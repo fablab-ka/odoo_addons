@@ -9,7 +9,7 @@ _logger = logging.getLogger(__name__)
 
 class AuthSignupHome(main.Home):
 
-    def _signup_with _values(self, token, values):
+    def _signup_with_values(self, token, values):
         print("test!" + str(token) + str(values))
         Ldap = main.request.env['res.company.ldap']
         for conf in Ldap.get_ldap_dicts():
@@ -42,14 +42,15 @@ class CompanyLDAP(models.Model):
             conn = self.connect(conf)
             ldap_password = conf['ldap_password'] or ''
             ldap_binddn = conf['ldap_binddn'] or ''
+
             conn.simple_bind_s(ldap_binddn.encode('utf-8'), ldap_password.encode('utf-8'))
 
             dn = "cn=" + email + "," + conf['ldap_base']
             mod_list = {
                 "objectClass": ["inetOrgPerson"],
-                "cn": [str(name)],
-                "sn": [str(name.split(' ')[-1])],
-                "mail": [str(email)],  # IA5
+                "cn": [str(name).encode('utf-8')],
+                "sn": [str(name.split(' ')[-1]).encode('utf-8')],
+                "mail": [str(email).encode('utf-8')],  # IA5
             }
 
             conn.add_s(dn, modlist.addModlist(mod_list))
@@ -63,6 +64,15 @@ class CompanyLDAP(models.Model):
             _logger.error('An LDAP exception occurred: %s', e)
             return
         return True
+
+    def connect(self, conf):
+        uri = 'ldap://%s:%d' % (conf['ldap_server'], conf['ldap_server_port'])
+
+        connection = ldap.initialize(uri, bytes_mode=False)
+        #connection.protocol_version = ldap.VERSION3
+        if conf['ldap_tls']:
+            connection.start_tls_s()
+        return connection
 
 
 class BaseConfigSettings(models.TransientModel):

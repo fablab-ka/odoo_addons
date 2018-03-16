@@ -25,7 +25,7 @@
         <field name="margin_right">1</field>
         <field name="header_line" eval="False"/>
         <field name="header_spacing">0</field>
-        <field name="dpi">140</field>
+        <field name="dpi">254</field>
     </record>
 
     <report
@@ -43,35 +43,33 @@
     <t t-call="report.html_container">
         <t t-foreach="docs" t-as="o">
             <t>
-                <div class="page" style="font-size:30px">
-                    <table class="table table-condensed" cellspacing="2"
-                           style="border-bottom: 0px solid white !important; padding:0;margin:0;wifth=200px">
+                <div class="page" style="font-size:25px">
+                    <table border="1"
+                           style="padding:0;margin:0;">
                         <tr>
-                            <td>
-                                <span style="white-space:nowrap" t-field="o.product_id.name"/>
+                            <td colspan="2" margin="20">
+                                <span style="white-space:nowrap;float:left;width:200px" t-field="o.product_id.name"/>
                             </td>
                         </tr>
+                        <!--<tr>-->
+                            <!--<td>-->
+                                <!--<img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'-->
+                                    <!--% ('Code128', o.name, 600, 20)"-->
+                                    <!--style="width:300px;height:20px;float:left"/>-->
+                            <!--</td>-->
+                        <!--</tr>-->
                         <tr>
                             <td>
-                                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'
-                                    % ('Code128', o.name, 4000, 20)"
-                                    style="width:550;height:20px"/>
+                                <br></br>
+                                <img src='/web/binary/company_logo' style="width:80px;height:80px;vertical-align:center"/><br></br>
+                                Serial:
+                                <span style="white-space:nowrap;display:inline-block"  t-field="o.name"/>
                             </td>
-                        </tr>
-                        <tr>
                             <td>
-                                <table>
-                                    <tr>
-                                        <td style="vertical-align:top">
-                                            SN: <span style="white-space:nowrap;display:inline-block;width=100px;vertical-align:top"  t-field="o.name"/>
-                                        </td>
-                                        <td>
-                                            <img  t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'
-                                                % ('QR', 'odoo.fablab-karlsruhe.de/prod/' + o.name, 1600, 1600)"
-                                                style="width:280px;height:280px;float:center"/>
-                                        </td>
-                                    </tr>
-                                </table>
+                                <img  t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'
+                                    % ('QR', 'odoo.fablab-karlsruhe.de/prod/' + o.name, 1600, 1600)"
+                                    style="width:180px;height:180px;vertical-align:top;align:left"/>
+
                             </td>
                         </tr>
                     </table>
