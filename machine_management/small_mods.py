@@ -46,3 +46,19 @@ class Users(models.Model):
         print("mail on create " + str(user.email))
         user.partner_id.email = user.email
         return user
+
+
+from odoo import http, _
+from odoo.addons.website_event_sale.controllers.main import WebsiteEventSaleController
+from odoo.http import request
+from odoo.exceptions import AccessError
+
+class WebsiteEventController(http.Controller):
+
+    @http.route(['/event/<model("event.event"):event>/register'], type='http', auth="public", website=True)
+    def event_register(self, event, **post):
+        try:
+            event = event.with_context(pricelist=request.website.get_current_pricelist().id)
+            return super(WebsiteEventSaleController, self).event_register(event, **post)
+        except (AccessError, AttributeError):
+            return request.redirect("/web/login")
