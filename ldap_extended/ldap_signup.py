@@ -10,19 +10,17 @@ _logger = logging.getLogger(__name__)
 class AuthSignupHome(main.Home):
 
     def _signup_with_values(self, token, values):
-        print("test!" + str(token) + str(values))
         Ldap = main.request.env['res.company.ldap']
         for conf in Ldap.get_ldap_dicts():
             if Ldap.create_entry(conf, values['name'], values['login'], values['password']):
-                print("LDAP entry created!")
                 main.request.env.cr.commit()  # as authenticate will use its own cursor we need to commit the current transaction
                 #uid = main.request.session.authenticate(values.db, values.login, values.password)
                 return
-        raise
+        raise Exception
         db, login, password = main.request.env['res.users'].sudo().signup(values, token)
 
         main.request.env.cr.commit()     # as authenticate will use its own cursor we need to commit the current transaction
-        uid = main.request.session.authenticate(db, login, password)
+        uid = main.request.session.authenticate(db, login, password.encode("utf-16-le"))
         if not uid:
             raise SignupError(_('Authentication Failed.'))
 
@@ -48,13 +46,13 @@ class CompanyLDAP(models.Model):
             dn = "cn=" + email + "," + conf['ldap_base']
             mod_list = {
                 "objectClass": ["inetOrgPerson"],
-                "cn": [str(name).encode('utf-8')],
-                "sn": [str(name.split(' ')[-1]).encode('utf-8')],
-                "mail": [str(email).encode('utf-8')],  # IA5
+                "cn": [unicode(name).encode('utf-8')],
+                "sn": [unicode(name.split(' ')[-1]).encode('utf-8')],
+                "mail": [unicode(email).encode('utf-8')],  # IA5
             }
 
             conn.add_s(dn, modlist.addModlist(mod_list))
-            conn.passwd_s(dn, None, str(password))
+            conn.passwd_s(dn, None, password.encode("utf-8"))
             conn.unbind()
 
         except ldap.INVALID_CREDENTIALS:
