@@ -53,12 +53,34 @@ from odoo.addons.website_event_sale.controllers.main import WebsiteEventSaleCont
 from odoo.http import request
 from odoo.exceptions import AccessError
 
-class WebsiteEventController(http.Controller):
+
+class WebsiteEventSaleController(WebsiteEventSaleController):
 
     @http.route(['/event/<model("event.event"):event>/register'], type='http', auth="public", website=True)
     def event_register(self, event, **post):
         try:
             event = event.with_context(pricelist=request.website.get_current_pricelist().id)
             return super(WebsiteEventSaleController, self).event_register(event, **post)
-        except (AccessError, AttributeError):
-            return request.redirect("/web/login")
+        except AccessError:
+            return request.redirect("/web/login?redirect=/event")
+
+
+
+#from odoo.addons.website_event.controllers.main import WebsiteEventController
+import odoo.addons.website_event.controllers.main as main
+
+
+class WebsiteEventController(main.WebsiteEventController):
+
+    @http.route(['/event/<model("event.event"):event>/register'], type='http', auth="public", website=True)
+    def event_register(self, event, **post):
+        try:
+            values = {
+                'event': event,
+                'main_object': event,
+                'range': range,
+                'registrable': event._is_event_registrable()
+            }
+            return request.render("website_event.event_description_full", values)
+        except AccessError:
+            return request.redirect("/web/login?redirect=/event")
